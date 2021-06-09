@@ -10,8 +10,7 @@
 
 ## Description
 
-This application is show my basic knowledge with using a NoSQL database and ORM
-with express-graphql. I hope you enjoy!
+This application is show my portfolio using a bunch of packages to make a awesome page!
 
 ## Install
 
@@ -19,8 +18,8 @@ npm i <-- Gets all packages *USE AT ROOT FOLDER*
 
 ## Usage
 
-cd backend
-nodemon server.js
+cd client
+npm run dev
 
 ## Contribute?
 
