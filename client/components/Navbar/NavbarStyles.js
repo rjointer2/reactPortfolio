@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
+import Link from 'next/link';
 import { Link as LinkN } from 'react-scroll';
 
 // Palette
