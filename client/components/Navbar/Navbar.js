@@ -1,20 +1,25 @@
 
 import React from 'react';
-import { Nav, NavContainer } from './NavbarStyles';
+import { NavLogo, NavMenu, MobileMenu, Nav, NavContainer, NavLinks } from './NavbarStyles';
 
-import Link from 'next/link';
 
 const Navbar = () => {
     return (
-        <div>
-            <Nav>
-                <NavContainer>
-                    <Link href="#">
-                        Logo
-                    </Link>
-                </NavContainer>
-            </Nav>
-        </div>
+        <Nav>
+            <NavContainer>
+                <NavLogo to="#">
+                    Logo
+                </NavLogo>
+                <MobileMenu>
+                    
+                </MobileMenu>
+                <NavMenu>
+                    <NavLinks href="#">
+                        Hi
+                    </NavLinks>
+                </NavMenu>
+            </NavContainer>
+        </Nav>
     )
 }
 
