@@ -5,6 +5,7 @@ import { NavLogo, NavMenu, MobileMenu, Nav, NavContainer, NavLinks, CreateAccoun
 // icons
 
 import { FaBars } from 'react-icons/fa'
+import Link from 'next/link';
 
 // toggle is drilled from the app's Navbar component
 
@@ -13,26 +14,33 @@ const Navbar = ({ toggle }) => {
     return (
         <Nav>
             <NavContainer>
-                <NavLogo href="#">
-                    logo
-                </NavLogo>
+                {/* 
+                    not sure why the link from next not converting to a a tag
+                    so for now we'll import the link componnet form next and 
+                    style the Navlogo as a div
+                */}
+                <Link href="#">
+                    <NavLogo>
+                        logo
+                    </NavLogo>
+                </Link>
                 <MobileMenu onClick={toggle} >
                     <FaBars/>
                 </MobileMenu>
                 <NavMenu>
-                    <NavLinks href="about">
-                        About 
+                    <NavLinks href="/">
+                        About
                     </NavLinks>
-                    <NavLinks href="about">
+                    <NavLinks href="/">
                         Skill Set 
                     </NavLinks>
-                    <NavLinks href="about">
+                    <NavLinks href="/">
                         Projects 
                     </NavLinks>
-                    <NavLinks href="about">
+                    <NavLinks href="/">
                          Inquiry
                     </NavLinks>
-                    <NavLinks href="about">
+                    <NavLinks href="/">
                         Learn More 
                     </NavLinks>
                 </NavMenu>

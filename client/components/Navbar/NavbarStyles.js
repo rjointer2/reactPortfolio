@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import Link from 'next/link';
+
 import { Link as LinkR } from 'react-scroll';
 
 // Palette
@@ -35,7 +35,9 @@ export const NavContainer = styled.div`
     max-width: 1100px;
 `;
 
-export const NavLogo = styled(Link)`
+// not sure why the link from next not converting to a a tag
+
+export const NavLogo = styled.div`
     color: ${white};
     justify-self: flex-start;
     cursor: pointer;
@@ -86,6 +88,11 @@ export const NavLinks = styled(LinkR)`
     cursor: pointer;
 
     &.active {
+        border-bottom: 3px solid ${secondary};
+    }
+
+    &:hover {
+        height: 80px;
         border-bottom: 3px solid ${secondary};
     }
    
