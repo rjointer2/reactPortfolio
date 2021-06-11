@@ -1,0 +1,13 @@
+
+/* test */
+
+a {
+    text-decoration: none;
+    color: red;
+    display: flex;
+    justify-self: center;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 24px;
+    font-weight: bold;
+}

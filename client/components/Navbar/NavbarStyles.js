@@ -31,12 +31,13 @@ export const NavContainer = styled.div`
 `;
 
 export const NavLogo = styled(Link)`
-    color: #fff;
+    color: red;
     justify-self: flex-start;
     font-size: 1rem;
     display: flex;
     align-item: center;
     margin-left: 24px;
     font-weight: bold;
-    margin-top: 14em
+    margin-top: 14em;
+    text-decoration: none;
 `;
