@@ -10,7 +10,7 @@ const primary = "#f7dada" // light Pink
 const secondary = "#f0cccc" // biege
 const white = "#fff" // white
 
-export const SideBarContainer = styled.div`
+export const SideBarContainer = styled.aside`
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -20,10 +20,10 @@ export const SideBarContainer = styled.div`
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
-    /* opacity: ${({ isOpen }) => (isOpen ? '100%' : '0' )};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100%' )}; */
-    top: 0;
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0' )};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%' )};
 `;
+
 
 export const CloseMenu = styled(FaTimes)`
     color: ${white};
@@ -86,6 +86,14 @@ export const SideBarBtnLink = styled.div`
 
 `;
 
-export const SidebarMenu = styled.ul`
+export const SideBarMenu = styled.ul`
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 80px);
+    text-align: center;
 
+
+    @media screen and (max-width: 480px) {
+        grid-template-rows: repeat(6, 80px);
+    }
 `;

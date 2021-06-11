@@ -6,15 +6,17 @@ import { NavLogo, NavMenu, MobileMenu, Nav, NavContainer, NavLinks, CreateAccoun
 
 import { FaBars } from 'react-icons/fa'
 
+// toggle is drilled from the app's Navbar component
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
+
     return (
         <Nav>
             <NavContainer>
-                <NavLogo to="#">
-                    Logo
+                <NavLogo href="#">
+                    logo
                 </NavLogo>
-                <MobileMenu>
+                <MobileMenu onClick={toggle} >
                     <FaBars/>
                 </MobileMenu>
                 <NavMenu>

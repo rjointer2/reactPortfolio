@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
-import { Link as LinkN } from 'react-scroll';
+import { Link as LinkR } from 'react-scroll';
 
 // Palette
 
@@ -44,7 +44,7 @@ export const NavLogo = styled(Link)`
     align-items: 24px;
     font-weight: bold;
     text-decoration: none;
-`
+`;
 
 export const MobileMenu = styled.div`
     display: none;
@@ -76,7 +76,7 @@ export const NavItem = styled.li`
     height: 80px;
 `
 
-export const NavLinks = styled(LinkN)`
+export const NavLinks = styled(LinkR)`
     color: ${white};
     display: flex;
     align-items: center;
@@ -100,7 +100,7 @@ export const CreateAccount = styled.nav`
     }
 `   
 
-export const CreateAccountBtn = styled(LinkN)`
+export const CreateAccountBtn = styled(LinkR)`
     border-radius: 50px;
     background: ${secondary};
     white-space:  nowrap;
