@@ -17,8 +17,10 @@ const App = ({Component, pageProps}) => {
 
     return (
         <>
-            <Navbar toggle={toggle} />
-            <SideBar isOpen={isOpen} toggle={toggle}/>
+          {/* they work just make sure the div is large enought for the bubbles */}  
+
+            {/* <Navbar toggle={toggle} />
+            <SideBar isOpen={isOpen} toggle={toggle}/> */}
             <Component {...pageProps}/>
         </>
     )

@@ -1,9 +1,11 @@
+import LandingPage from "../components/LandingPage/LandingPage";
 
 const Index = () => {
     return (
         <div>
+            <LandingPage/>
             <h1>Hello World</h1>
-            <p>Testing...</p>
+            <p>Testing...!</p>
         </div>
     )
 }
