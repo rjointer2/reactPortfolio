@@ -1,11 +1,11 @@
-import Testing from "../components/test"
+import Navbar from "../components/Navbar/Navbar";
 
 const Index = () => {
     return (
         <>
+            <Navbar/>
             <h1>Hello World</h1>
             <p>Testing...</p>
-            <Testing/>
         </>
     )
 }
