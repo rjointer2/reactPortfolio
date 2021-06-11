@@ -1,6 +1,6 @@
 
-import React from 'react'
-import { Nav, NavContainer, NavLogo } from './NavbarStyles';
+import React from 'react';
+import { Nav, NavContainer } from './NavbarStyles';
 
 import Link from 'next/link';
 
@@ -9,9 +9,9 @@ const Navbar = () => {
         <div>
             <Nav>
                 <NavContainer>
-                    <NavLogo href="#">
+                    <Link href="#">
                         Logo
-                    </NavLogo>
+                    </Link>
                 </NavContainer>
             </Nav>
         </div>

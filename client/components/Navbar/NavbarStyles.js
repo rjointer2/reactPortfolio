@@ -29,15 +29,3 @@ export const NavContainer = styled.div`
     padding: 0 24px;
     max-width: 1100px;
 `;
-
-export const NavLogo = styled(Link)`
-    color: red;
-    justify-self: flex-start;
-    font-size: 1rem;
-    display: flex;
-    align-item: center;
-    margin-left: 24px;
-    font-weight: bold;
-    margin-top: 14em;
-    text-decoration: none;
-`;
