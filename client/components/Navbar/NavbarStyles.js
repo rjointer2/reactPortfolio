@@ -3,8 +3,14 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import { Link as LinkN } from 'react-scroll';
 
+// Palette
+
+const primary = "#f7dada" // light Pink
+const secondary = "#f0cccc" // biege
+const white = "#fff" // white
+
 export const Nav = styled.nav`
-    background: #000;
+    background: ${primary};
     height: 80px;
     display: flex;
     justify-content: center;
@@ -23,7 +29,6 @@ export const Nav = styled.nav`
 export const NavContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    height: 80px;
     z-index: 1;
     width: 100%;
     padding: 0 24px;
@@ -31,7 +36,7 @@ export const NavContainer = styled.div`
 `;
 
 export const NavLogo = styled(Link)`
-    color: #fff;
+    color: ${white};
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -46,11 +51,12 @@ export const MobileMenu = styled.div`
 
     @media screen and (max-width: 768px) {
         display: block;
-        position: absolute;
         top: 0;
         right: 0;
+        transform: translate(-100%, 60%)
         font-size: 1.8rem;
         cursor: pointer;
+        color: ${white};
     }
 `
 
@@ -71,7 +77,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkN)`
-    color: #fff;
+    color: ${white};
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -80,7 +86,36 @@ export const NavLinks = styled(LinkN)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid #fff;
+        border-bottom: 3px solid ${secondary};
     }
    
+`
+
+export const CreateAccount = styled.nav`
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`   
+
+export const CreateAccountBtn = styled(LinkN)`
+    border-radius: 50px;
+    background: ${secondary};
+    white-space:  nowrap;
+    padding: 10px 22px;
+    color: ${white};
+    font-soze: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: ${white};
+        color: ${primary};
+    }
 `
