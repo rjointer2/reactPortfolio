@@ -1,7 +1,13 @@
-import { BubbleContainer, BubbleItems, Bubbles } from "./LandingPageStyle"
+import { useEffect } from "react";
+import { BubbleContainer, BubbleItems, Bubbles } from "./LandingPageStyle";
 
 
 const LandingPage = () => {
+
+    /* useEffect(() => {
+
+    }, [BubbleContainer, BubbleItems, Bubbles]) */
+
     return (
         <div>
             <BubbleContainer>
