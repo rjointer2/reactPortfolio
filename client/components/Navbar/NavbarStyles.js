@@ -5,9 +5,16 @@ import { Link as LinkR } from 'react-scroll';
 
 // Palette
 
-const primary = "#f7dada" // light Pink
+const primary = "#d45d83" // light Pink
 const secondary = "#f0cccc" // biege
 const white = "#fff" // white
+
+export const HoverArhcor = styled.div`
+   &:hover {
+    left: 12;
+    width: 0;
+   }
+`;
 
 export const Nav = styled.nav`
     background: ${primary};
@@ -84,12 +91,7 @@ export const NavLinks = styled(LinkR)`
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
-    height: 100%;
     cursor: pointer;
-
-    &.active {
-        border-bottom: 3px solid ${secondary};
-    }
 
     &:hover {
         height: 80px;

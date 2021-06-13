@@ -1,11 +1,12 @@
-import LandingPage from "../components/LandingPage/LandingPage";
+import Landing from "../components/Landing/Landing";
+
 
 const Index = () => {
     return (
         <div>
-            <LandingPage/>
+            <Landing />
             <h1>Hello World</h1>
-            <p>Testing...!</p>
+            <p>Testing...!!</p>
         </div>
     )
 }

@@ -1,4 +1,6 @@
 
+
+
 import { useState } from 'react';
 import Navbar from '../components/Navbar/Navbar'
 import SideBar from '../components/SideBar/SideBar'
@@ -17,10 +19,9 @@ const App = ({Component, pageProps}) => {
 
     return (
         <>
-          {/* they work just make sure the div is large enought for the bubbles */}  
 
-            {/* <Navbar toggle={toggle} />
-            <SideBar isOpen={isOpen} toggle={toggle}/> */}
+            <Navbar toggle={toggle} />
+            <SideBar isOpen={isOpen} toggle={toggle}/>
             <Component {...pageProps}/>
         </>
     )

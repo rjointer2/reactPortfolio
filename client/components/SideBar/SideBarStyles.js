@@ -6,7 +6,7 @@ import { FaTimes } from 'react-icons/fa';
 
 // Palette
 
-const primary = "#f7dada" // light Pink
+const primary = "#d45d83" // light Pink
 const secondary = "#f0cccc" // biege
 const white = "#fff" // white
 
