@@ -1,6 +1,8 @@
 
 import React from 'react';
-import { NavLogo, NavMenu, MobileMenu, Nav, NavContainer, NavLinks, CreateAccount, CreateAccountBtn } from './NavbarStyles';
+import { useEffect, useState } from 'react'
+
+import { NavLogo, NavMenu, MobileMenu, Nav, NavContainer, NavLinks, CreateAccount, CreateAccountBtn, HoverArhcor } from './NavbarStyles';
 
 // icons
 
@@ -11,6 +13,9 @@ import Link from 'next/link';
 
 const Navbar = ({ toggle }) => {
 
+
+
+    
     return (
         <Nav>
             <NavContainer>
@@ -28,6 +33,7 @@ const Navbar = ({ toggle }) => {
                     <FaBars/>
                 </MobileMenu>
                 <NavMenu>
+                    <HoverArhcor>Hi</HoverArhcor>
                     <NavLinks href="/">
                         About
                     </NavLinks>
