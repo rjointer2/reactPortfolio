@@ -13,10 +13,30 @@ import Link from 'next/link';
 
 const Navbar = ({ toggle }) => {
 
+    const hover = useRef()
+    const test = () => console.log(hover.current.getAttribute("class"))
+
     useEffect(() => {
 
-        console.log(HoverArhcor)
+
+        const navElement = hover.current.getAttribute("class").split(" ")[1];
+        const hoverLine = document.querySelector(`.${navElement}`);
+
+        const items = document.querySelectorAll('nav a');
+
+        function hoverUnder(a){
+            hoverLine.style.left = a.offsetLeft+"px";
+            hoverLine.style.width = a.offsetWidth+"px";
+        }
         
+        items.forEach(link => {
+            link.addEventListener('mouseenter', (a)=>{
+                hoverUnder(a.target);
+            })
+        })
+
+
+
         /* // ReatDOM ins't working? But after the side effect loaded the componenment mounts
         const hoverLine = document.querySelector('.emRAOx');
 
@@ -39,8 +59,7 @@ const Navbar = ({ toggle }) => {
 
     // instead we use will the useRef hook to get the dom element
 
-    const hover = useRef()
-    const test = () => console.log(hover.current.getAttribute("class"))
+    
     
     return (
         <Nav>
