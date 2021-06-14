@@ -15,6 +15,7 @@ export const HoverArhcor = styled.div.attrs()`
     left: 0;
     width: 0;
     background: #f6a3d1;
+    bottom: 1em;
     transition: .6s;
     border-radius: 4px;
     transform: translateY(.7em);

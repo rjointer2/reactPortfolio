@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { useEffect, useState } from 'react'
 
 import { NavLogo, NavMenu, MobileMenu, Nav, NavContainer, NavLinks, CreateAccount, CreateAccountBtn, HoverArhcor } from './NavbarStyles';
@@ -14,8 +14,10 @@ import Link from 'next/link';
 const Navbar = ({ toggle }) => {
 
     useEffect(() => {
+
+        console.log(HoverArhcor)
         
-        // ReatDOM ins't working? But after the side effect loaded the componenment mounts
+        /* // ReatDOM ins't working? But after the side effect loaded the componenment mounts
         const hoverLine = document.querySelector('.emRAOx');
 
         // now let's select all the archor tags from the nav
@@ -29,12 +31,16 @@ const Navbar = ({ toggle }) => {
         
         items.forEach(link => {
             link.addEventListener('mouseenter', (a)=>{
-                hoverLine.style = 'red'
                 hoverUnder(a.target);
             })
-        })
+        }) */
 
     }, [])
+
+    // instead we use will the useRef hook to get the dom element
+
+    const hover = useRef()
+    const test = () => console.log(hover.current.getAttribute("class"))
     
     return (
         <Nav>
@@ -52,8 +58,11 @@ const Navbar = ({ toggle }) => {
                 <MobileMenu onClick={toggle} >
                     <FaBars/>
                 </MobileMenu>
+                <button onClick={test}>
+                    test
+                </button>
                 <NavMenu>
-                    <HoverArhcor></HoverArhcor>
+                    <HoverArhcor ref={hover}>Hover</HoverArhcor>
                     <NavLinks href="/">
                         About
                     </NavLinks>
