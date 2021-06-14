@@ -18,48 +18,23 @@ const Navbar = ({ toggle }) => {
 
     useEffect(() => {
 
+        
+        const hoverLine = document.querySelector(`.${hover.current.getAttribute("class").split(" ")[1]}`);
 
-        const navElement = hover.current.getAttribute("class").split(" ")[1];
-        const hoverLine = document.querySelector(`.${navElement}`);
+        const archorTags = document.querySelectorAll('nav a');
 
-        const items = document.querySelectorAll('nav a');
-
-        function hoverUnder(a){
+        const hoverUnder = (a) => {
             hoverLine.style.left = a.offsetLeft+"px";
             hoverLine.style.width = a.offsetWidth+"px";
         }
         
-        items.forEach(link => {
-            link.addEventListener('mouseenter', (a)=>{
-                hoverUnder(a.target);
+        archorTags.forEach(archorTag => {
+            archorTag.addEventListener('mouseenter', (e)=>{
+                hoverUnder(e.target);
             })
         })
 
-
-
-        /* // ReatDOM ins't working? But after the side effect loaded the componenment mounts
-        const hoverLine = document.querySelector('.emRAOx');
-
-        // now let's select all the archor tags from the nav
-
-        const items = document.querySelectorAll('nav a');
-
-        function hoverUnder(a){
-            hoverLine.style.left = a.offsetLeft+"px";
-            hoverLine.style.width = a.offsetWidth+"px";
-        }
-        
-        items.forEach(link => {
-            link.addEventListener('mouseenter', (a)=>{
-                hoverUnder(a.target);
-            })
-        }) */
-
     }, [])
-
-    // instead we use will the useRef hook to get the dom element
-
-    
     
     return (
         <Nav>
@@ -77,11 +52,9 @@ const Navbar = ({ toggle }) => {
                 <MobileMenu onClick={toggle} >
                     <FaBars/>
                 </MobileMenu>
-                <button onClick={test}>
-                    test
-                </button>
                 <NavMenu>
-                    <HoverArhcor ref={hover}>Hover</HoverArhcor>
+                    {/* here we reference this DOM element so we can use it later */}
+                    <HoverArhcor ref={hover}></HoverArhcor>
                     <NavLinks href="/">
                         About
                     </NavLinks>
