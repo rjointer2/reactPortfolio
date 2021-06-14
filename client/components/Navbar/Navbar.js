@@ -18,18 +18,21 @@ const Navbar = ({ toggle }) => {
         // ReatDOM ins't working? But after the side effect loaded the componenment mounts
         const hoverLine = document.querySelector('.emRAOx');
 
+        // now let's select all the archor tags from the nav
 
+        const items = document.querySelectorAll('nav a');
 
-        /* function hoverUnder(a){
+        function hoverUnder(a){
             hoverLine.style.left = a.offsetLeft+"px";
             hoverLine.style.width = a.offsetWidth+"px";
         }
         
-        item.forEach(link => {
-            link.addEventListener('mouseenter', (a)=>{re
+        items.forEach(link => {
+            link.addEventListener('mouseenter', (a)=>{
+                hoverLine.style = 'red'
                 hoverUnder(a.target);
             })
-        }) */
+        })
 
     }, [])
     
@@ -50,7 +53,7 @@ const Navbar = ({ toggle }) => {
                     <FaBars/>
                 </MobileMenu>
                 <NavMenu>
-                    <HoverArhcor>Hover</HoverArhcor>
+                    <HoverArhcor></HoverArhcor>
                     <NavLinks href="/">
                         About
                     </NavLinks>
