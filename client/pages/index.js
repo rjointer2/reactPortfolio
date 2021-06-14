@@ -1,3 +1,4 @@
+import About from "../components/About/About";
 import Landing from "../components/Landing/Landing";
 
 
@@ -5,6 +6,7 @@ const Index = () => {
     return (
         <div>
             <Landing />
+            <About />
             <h1>Hello World</h1>
             <p>Testing...!!</p>
         </div>

@@ -23,7 +23,7 @@ export const Heading = styled.div`
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({lightText}) => ( lightText ? 'black' : 'white' )};
+/*     color: ${({lightText}) => ( lightText ? 'black' : 'white' )}; */
 
     @media screen and (max-width: 460px) {
         font-size: 32px;
@@ -35,5 +35,5 @@ export const SubTitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({darkText}) => ( darkText ? 'white' : 'black' )}
+/*     color: ${({darkText}) => ( darkText ? 'white' : 'black' )} */
 `; 
