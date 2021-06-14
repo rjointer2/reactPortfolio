@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { useEffect, useState } from 'react'
 
 import { NavLogo, NavMenu, MobileMenu, Nav, NavContainer, NavLinks, CreateAccount, CreateAccountBtn, HoverArhcor } from './NavbarStyles';
@@ -13,8 +13,28 @@ import Link from 'next/link';
 
 const Navbar = ({ toggle }) => {
 
+    const hover = useRef()
+    const test = () => console.log(hover.current.getAttribute("class"))
 
+    useEffect(() => {
 
+        
+        const hoverLine = document.querySelector(`.${hover.current.getAttribute("class").split(" ")[1]}`);
+
+        const archorTags = document.querySelectorAll('nav a');
+
+        const hoverUnder = (a) => {
+            hoverLine.style.left = a.offsetLeft+"px";
+            hoverLine.style.width = a.offsetWidth+"px";
+        }
+        
+        archorTags.forEach(archorTag => {
+            archorTag.addEventListener('mouseenter', (e)=>{
+                hoverUnder(e.target);
+            })
+        })
+
+    }, [])
     
     return (
         <Nav>
@@ -33,7 +53,8 @@ const Navbar = ({ toggle }) => {
                     <FaBars/>
                 </MobileMenu>
                 <NavMenu>
-                    <HoverArhcor>Hi</HoverArhcor>
+                    {/* here we reference this DOM element so we can use it later */}
+                    <HoverArhcor ref={hover}></HoverArhcor>
                     <NavLinks href="/">
                         About
                     </NavLinks>

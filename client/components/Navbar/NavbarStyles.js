@@ -9,11 +9,16 @@ const primary = "#d45d83" // light Pink
 const secondary = "#f0cccc" // biege
 const white = "#fff" // white
 
-export const HoverArhcor = styled.div`
-   &:hover {
-    left: 12;
+export const HoverArhcor = styled.div.attrs()`
+    position: absolute;
+    height: 4px;
+    left: 0;
     width: 0;
-   }
+    background: #f6a3d1;
+    bottom: 1em;
+    transition: .6s;
+    border-radius: 4px;
+    transform: translateY(.7em);
 `;
 
 export const Nav = styled.nav`
@@ -93,10 +98,10 @@ export const NavLinks = styled(LinkR)`
     padding: 0 1rem;
     cursor: pointer;
 
-    &:hover {
+    /* &:hover {
         height: 80px;
         border-bottom: 3px solid ${secondary};
-    }
+    } */
    
 `
 
