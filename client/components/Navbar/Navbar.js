@@ -14,7 +14,6 @@ import Link from 'next/link';
 const Navbar = ({ toggle }) => {
 
     const hover = useRef()
-    const test = () => console.log(hover.current.getAttribute("class"))
 
     useEffect(() => {
 

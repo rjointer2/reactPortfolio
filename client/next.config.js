@@ -1,4 +1,7 @@
 const withImages = require('next-images');
 const withVdeos = require('next-videos');
+const withPlugins = require('next-compose-plugins');
 
-module.exports = withVdeos();
+
+
+module.exports = withPlugins([withImages, withVdeos]);

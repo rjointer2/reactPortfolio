@@ -2,8 +2,9 @@
 
 
 import { useState } from 'react';
-import Navbar from '../components/Navbar/Navbar'
-import SideBar from '../components/SideBar/SideBar'
+import Navbar from '../components/Navbar/Navbar';
+import SideBar from '../components/SideBar/SideBar';
+
 import './style.css'
 
 const App = ({Component, pageProps}) => {
