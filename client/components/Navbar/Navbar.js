@@ -13,8 +13,25 @@ import Link from 'next/link';
 
 const Navbar = ({ toggle }) => {
 
+    useEffect(() => {
+        
+        // ReatDOM ins't working? But after the side effect loaded the componenment mounts
+        const hoverLine = document.querySelector('.emRAOx');
 
 
+
+        /* function hoverUnder(a){
+            hoverLine.style.left = a.offsetLeft+"px";
+            hoverLine.style.width = a.offsetWidth+"px";
+        }
+        
+        item.forEach(link => {
+            link.addEventListener('mouseenter', (a)=>{re
+                hoverUnder(a.target);
+            })
+        }) */
+
+    }, [])
     
     return (
         <Nav>
@@ -33,7 +50,7 @@ const Navbar = ({ toggle }) => {
                     <FaBars/>
                 </MobileMenu>
                 <NavMenu>
-                    <HoverArhcor>Hi</HoverArhcor>
+                    <HoverArhcor>Hover</HoverArhcor>
                     <NavLinks href="/">
                         About
                     </NavLinks>
