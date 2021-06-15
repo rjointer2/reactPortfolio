@@ -61,10 +61,7 @@ const Navbar = ({ toggle }) => {
                         Skill Set 
                     </NavLinks>
                     <NavLinks href="/">
-                        Projects 
-                    </NavLinks>
-                    <NavLinks href="/">
-                         Inquiry
+                        Contact
                     </NavLinks>
                     <NavLinks href="/">
                         Learn More 

@@ -28,20 +28,10 @@ export const Wrapper = styled.div`
 `;
 
 export const Item = styled.div`
+    display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
     padding: 0 15px;
     margin: 1em;
+    justify-content: center
 `;
-
-
-/* display: grid;
-    height: 860px;
-    width: 100%;
-    max-width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 24px;
-    justify-content: center;
-    grid-template-areas: 
-        col1 col2
-    ; */

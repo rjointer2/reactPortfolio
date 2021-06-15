@@ -37,3 +37,23 @@ export const SubTitle = styled.p`
     line-height: 24px;
 /*     color: ${({darkText}) => ( darkText ? 'white' : 'black' )} */
 `; 
+
+
+export const Text5 = styled.p`
+    font-size: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center
+`;
+
+
+// About Roody Styles
+
+export const OffSetText = styled.div`
+    transform: translateX(-30px);
+`;
+
+export const RoodyText = styled.div`
+    font-weight: 300;
+    font-size: 30px;
+`;

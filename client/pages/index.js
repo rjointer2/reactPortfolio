@@ -1,14 +1,20 @@
 import About from "../components/About/About";
+import Contact from "../components/Contact/Contact";
 import Landing from "../components/Landing/Landing";
+import LeanrMore from "../components/LearnMore/LearnMore";
+import Skillset from "../components/SkillSet/Skillset";
+import Meta from "../components/Head/Head-SEO";
 
 
 const Index = () => {
     return (
         <div>
+            <Meta />
             <Landing />
             <About />
-            <h1>Hello World</h1>
-            <p>Testing...!!</p>
+            <Contact/>
+            <Skillset/>
+            <LeanrMore/>
         </div>
     )
 }
