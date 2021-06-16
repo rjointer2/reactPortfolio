@@ -26,10 +26,7 @@ const Skillset = ({ lightText, lightBackground, img1, img2, alt, swapImagePlacem
                                     {text}
                                     <br/><br/>
                                     {text}
-                                    <br/><br/>
-                                    {text}
-                                    <br/><br/>
-                                    {text}
+                                    
                                 </Text>
                             </TextWrapper>
                         </Column1>

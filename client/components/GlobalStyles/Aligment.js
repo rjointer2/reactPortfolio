@@ -41,6 +41,11 @@ export const Row = styled.div`
     @media screen and (max-width: 768px) {
         grid-template-areas: ${({swapImagePlacement}) => swapImagePlacement ? `'col1  col2'` : `'col2  col1'` };
     }
+
+    @media screen and (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+    }
 `;
 
 // columns div for the postions of the images

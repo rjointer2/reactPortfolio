@@ -13,6 +13,7 @@ const Index = () => {
             <Landing />
             <About {...aboutConfig} />
             <Skillset {...SkillSetConfig}/>
+            <Contact />
 
         </div>
     )
