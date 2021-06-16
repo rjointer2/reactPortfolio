@@ -23,6 +23,7 @@ const Navbar = ({ toggle }) => {
         const archorTags = document.querySelectorAll('nav a');
 
         const hoverUnder = (a) => {
+            console.log(a)
             hoverLine.style.left = a.offsetLeft+"px";
             hoverLine.style.width = a.offsetWidth+"px";
         }
@@ -31,6 +32,14 @@ const Navbar = ({ toggle }) => {
             archorTag.addEventListener('mouseenter', (e)=>{
                 hoverUnder(e.target);
             })
+        })
+
+        document.addEventListener('scroll', (e) => {
+            const y = window.scrollY
+            if(y === 800) hoverUnder(archorTags[0]);
+            if(y === 1600) hoverUnder(archorTags[1]);
+            if(y === 2400) hoverUnder(archorTags[2]);
+            if(y === 3200) hoverUnder(archorTags[3]);
         })
 
     }, [])
