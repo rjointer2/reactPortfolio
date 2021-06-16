@@ -42,7 +42,12 @@ export const SubTitle = styled.p`
     color: ${({darkText}) => ( darkText ? 'white' : 'black' )}
 `; 
 
+export const Text = styled.p`
+    font-size: 12px;
+    padding-top: 20px;
+`;
+
 
 export const UnderLine = styled.div`
-    border-bottom: 2px solid ${primary}
+    border-bottom: 2px solid ${primary};
 `;

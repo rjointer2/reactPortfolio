@@ -1,12 +1,13 @@
 
+import { x } from "joi";
 import { useEffect, useRef } from "react";
 import { Item, Container, Wrapper, Column1, Column2, Row } from "../GlobalStyles/Aligment"
 import { Img, ImgWrapper } from "../GlobalStyles/Img";
-import { Heading, SubTitle, TextWrapper, Title, UnderLine } from "../GlobalStyles/Text";
+import { Heading, SubTitle, Text, TextWrapper, Title, UnderLine } from "../GlobalStyles/Text";
 
 
 const About = ({
-    lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading
+    lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading, text
 }) => {
 
     const divs = useRef();
@@ -16,9 +17,8 @@ const About = ({
         // we want to get the css divs Heading, Title, and Underline, and the Img
 
         const divChildern = divs.current.childNodes
-        console.log(divChildern)
 
-        // then add a fade in property function
+        
     })
 
     return (
@@ -35,11 +35,14 @@ const About = ({
                                 {title}
                             </Title>
                             <UnderLine />
+                            <Text>
+                                {text}
+                            </Text>
                         </TextWrapper>
                     </Column1>
                     <Column2>
                         <ImgWrapper>
-                            <Img />
+                            <Img src={img} alt={alt}/>
                         </ImgWrapper>
                     </Column2>
                 </Row>
