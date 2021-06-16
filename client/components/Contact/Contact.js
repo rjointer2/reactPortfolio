@@ -1,12 +1,16 @@
 
-import { Item, Container, Wrapper } from "../GlobalStyles/Aligment"
+import { Container, Wrapper } from "../GlobalStyles/Aligment"
 
 
-const Contact = () => {
+const Contact = ({
+    lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading, text
+}) => {
     return (
 
-        <Container>
-            
+        <Container lightBackground={lightBackground}>
+            <Wrapper>
+
+            </Wrapper>
         </Container>
     )
 }
