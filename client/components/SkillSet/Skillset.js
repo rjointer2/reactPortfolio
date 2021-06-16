@@ -20,7 +20,7 @@ const Skillset = ({ lightText, lightBackground, img1, img2, alt, swapImagePlacem
                                 <Heading lightText={lightText}>
                                     Server Side Development
                                 </Heading>
-                                <Text>
+                                <Text lightText={lightText}>
                                     {text}
                                     <br/><br/>
                                     {text}
@@ -53,7 +53,7 @@ const Skillset = ({ lightText, lightBackground, img1, img2, alt, swapImagePlacem
                                 <Heading lightText={lightText}>
                                     Client Side Development
                                 </Heading>
-                                <Text>
+                                <Text lightText={lightText}>
                                     {text}
                                     <br/><br/>
                                     {text}

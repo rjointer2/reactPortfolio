@@ -34,7 +34,9 @@ const About = ({
                                 {title}
                             </Title>
                             <UnderLine />
-                            <Text>
+                            <Text lightText={lightText}>
+                                {text}
+                                <br/><br/>
                                 {text}
                             </Text>
                         </TextWrapper>
