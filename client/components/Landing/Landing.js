@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { LandingContainer, LandingBackground, VideoBackground, LandingContent, LandingH1, LandingP } from './LandingStyles';
+import { LandingContainer, LandingBackground, VideoBackground, LandingContent, LandingH1, LandingP, LandingScroll } from './LandingStyles';
 import video from '../../assets/bg.mp4'
 
 const Landing = () => {
@@ -11,10 +11,24 @@ const Landing = () => {
             </LandingBackground>
             <LandingContent>
                     <LandingP>
-                        I'm a lot things...
+                       Hello, I'm Roody
                     </LandingP>
                     <LandingH1>
-                        Full Stack Developer
+                        <LandingScroll>
+                            Web Designer
+                        </LandingScroll>
+                        <LandingScroll>
+                            Web Developer
+                        </LandingScroll>
+                        <LandingScroll>
+                            Problem Solver
+                        </LandingScroll>
+                        <LandingScroll>
+                            Team Player
+                        </LandingScroll>
+                        <LandingScroll>
+                            Hope You Enjoy!
+                        </LandingScroll>
                     </LandingH1>
                 </LandingContent>
         </LandingContainer>

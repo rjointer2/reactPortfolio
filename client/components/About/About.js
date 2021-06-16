@@ -1,36 +1,37 @@
 
 import { Button } from "react-scroll";
-import { Item, Container, Wrapper } from "../GlobalStyles/Aligment"
+import { Item, Container, Wrapper, Column1, Column2, Row } from "../GlobalStyles/Aligment"
 import { BtnWrapper } from "../GlobalStyles/Buttons"
 import { Img, ImgWrapper } from "../GlobalStyles/Img";
-import { Heading, SubTitle, Text5, TextWrapper, Title, OffSetText, RoodyText } from "../GlobalStyles/Text";
+import { Heading, SubTitle, TextWrapper, Title } from "../GlobalStyles/Text";
 import aboutMe from '../../assets/aboutMe.svg';
+import me from '../../assets/me.png'
 
-
-const About = () => {
+const About = ({
+    lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading
+}) => {
     return (
 
-        <Container>
+        <Container lightBackground={lightBackground} id={id}>
             <Wrapper>
-                <Item>
-                    <TextWrapper>
-                        <OffSetText>
-                            About
-                        </OffSetText>
-                        <RoodyText>
-                            Roody
-                        </RoodyText>
-                    </TextWrapper>
-                </Item>
-                <Item>
-                    <Img src={aboutMe} height="200px"/>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </Item>
+                <Row swapImagePlacement={swapImagePlacement} >
+                    <Column1>
+                        <TextWrapper>
+                            <Heading lightText={lightText} >
+                                {heading}
+                            </Heading>
+                            <Title>
+                                {title}
+                            </Title>
+                            <UnderLine />
+                        </TextWrapper>
+                    </Column1>
+                    <Column2>
+                        <ImgWrapper>
+                            <Img src={img} alt={alt} />
+                        </ImgWrapper>
+                    </Column2>
+                </Row>
             </Wrapper>
         </Container>
     )

@@ -53,8 +53,10 @@ export const LandingContent = styled.div`
 
 export const LandingH1 = styled.h1`
     color: ${white};
-    font-size: 48px;
+    font-size: 45px;
     text-align: center;
+    height: 50px;
+    overflow: hidden;
 
     @media screen and (max-width: 760px) {
         font-size: 40px;
@@ -62,6 +64,45 @@ export const LandingH1 = styled.h1`
 
     @media screen and (max-width: 480px) {
         font-size: 30px;
+    }
+
+`;
+
+export const LandingScroll = styled.div`
+    line-height: 80px;
+
+    &:nth-child(1) {
+        animation: scrolltext 15s infinite;
+    }
+
+    @keyframes scrolltext {
+        0%{
+          margin-top: 0;
+        }
+        12%{
+            margin-top: -80px;
+        }
+        22%{
+            margin-top: -160px;
+        }
+        33%{
+            margin-top: -240px;
+        }
+        50%{
+            margin-top: -320px;
+        }
+        62%{
+            margin-top: -240px;
+        }
+        75%{
+            margin-top: -160px;
+        }
+        83%{
+            margin-top: -80px;
+        }
+        100%{
+            margin-top: 0;
+        }
     }
 
 `;

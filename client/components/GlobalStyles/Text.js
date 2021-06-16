@@ -1,15 +1,19 @@
 
 import styled from 'styled-components';
 
+const primary = "#d45d83" // light Pink
+const secondary = "#f0cccc" // biege
+const white = "#fff" // white
+
 
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding: 0;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 `;
 
 export const Title = styled.div`
-    color: #010191;
+    color: ${primary};
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -23,7 +27,7 @@ export const Heading = styled.div`
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-/*     color: ${({lightText}) => ( lightText ? 'black' : 'white' )}; */
+    color: ${({lightText}) => ( lightText ? primary : 'blsack' )};
 
     @media screen and (max-width: 460px) {
         font-size: 32px;
@@ -35,25 +39,8 @@ export const SubTitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-/*     color: ${({darkText}) => ( darkText ? 'white' : 'black' )} */
+    color: ${({darkText}) => ( darkText ? 'white' : 'black' )}
 `; 
 
 
-export const Text5 = styled.p`
-    font-size: 10px;
-    width: 50%;
-    display: flex;
-    justify-content: center
-`;
 
-
-// About Roody Styles
-
-export const OffSetText = styled.div`
-    transform: translateX(-30px);
-`;
-
-export const RoodyText = styled.div`
-    font-weight: 300;
-    font-size: 30px;
-`;
