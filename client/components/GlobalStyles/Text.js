@@ -13,7 +13,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const Title = styled.div`
-    color: ${primary};
+    color: ${({lightText}) => ( lightText ? white : primary )};
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -27,7 +27,7 @@ export const Heading = styled.div`
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({lightText}) => ( lightText ? primary : 'blsack' )};
+    color: ${({lightText}) => ( lightText ? white : primary )};
 
     @media screen and (max-width: 460px) {
         font-size: 32px;

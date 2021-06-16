@@ -1,8 +1,8 @@
 
-export const aboutConfig = {
-    id: 'about',
-    lightBackground: true,
-    lightText: false,
+export const SkillSetConfig = {
+    id: 'skillset',
+    lightBackground: false,
+    lightText: true,
     swapImagePlacement: false,
     img: require('../../assets/me.png'),
     darkText: false,

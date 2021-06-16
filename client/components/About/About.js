@@ -1,11 +1,8 @@
 
-import { x } from "joi";
 import { useEffect, useRef } from "react";
-import { Button } from "react-scroll";
-import { Item, Container, Wrapper, Column1, Column2, Row } from "../GlobalStyles/Aligment"
-import { BtnWrapper } from "../GlobalStyles/Buttons";
+import { Container, Wrapper, Column1, Column2, Row } from "../GlobalStyles/Aligment"
 import { Img, ImgWrapper } from "../GlobalStyles/Img";
-import { Heading, SubTitle, Text, TextWrapper, Title, UnderLine } from "../GlobalStyles/Text";
+import { Heading, Text, TextWrapper, Title, UnderLine } from "../GlobalStyles/Text";
 
 
 const About = ({

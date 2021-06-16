@@ -16,27 +16,27 @@ const SideBar = ({ isOpen, toggle }) => {
             </Menu>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <Link prefetch href="about">
+                    <Link href="about">
                         <SideBarLink href="about">
                             About
                         </SideBarLink>
                     </Link>
-                    <Link prefetch href="skillset">
+                    <Link href="skillset">
                         <SideBarLink href="skillset" onClick={toggle} >
                                 Skill Set 
                         </SideBarLink>
                     </Link>
-                    <Link prefetch href="projects">
+                    <Link href="projects">
                         <SideBarLink href="projects" onClick={toggle} >
                             Projects 
                         </SideBarLink>
                     </Link>
-                   <Link prefetch href ="contact">
+                   <Link href ="contact">
                     <SideBarLink href="inquiry" onClick={toggle} >
                             Inquiry
                         </SideBarLink>
                    </Link>
-                    <Link prefetch href="learnmore">
+                    <Link href="learnmore">
                         <SideBarLink href="laernmore" onClick={toggle} >
                             Learn More 
                         </SideBarLink>

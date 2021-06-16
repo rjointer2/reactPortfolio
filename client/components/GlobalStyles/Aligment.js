@@ -8,7 +8,7 @@ const secondary = "#f0cccc" // biege
 const white = "#fff" // white
 
 export const Container = styled.div`
-    color: ${({ lightBackground }) => ( lightBackground ? 'white' : 'black' )};
+    background-color: ${({ lightBackground }) => ( lightBackground ? 'white' : primary )};
     display: flex;
     justify-content: center;
 

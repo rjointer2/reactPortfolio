@@ -1,17 +1,25 @@
 
-import { Item, Container, Wrapper, ContainerOther } from "../GlobalStyles/Aligment"
-import { HeadingWhite, TextW, TextWrapper, Title } from "../GlobalStyles/Text"
+import { Container, Row, Column1, Wrapper } from "../GlobalStyles/Aligment"
+import { TextWrapper, Title } from "../GlobalStyles/Text"
 
 
 
-const Skillset = () => {
+const Skillset = ({ lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading, text }) => {
+   
     return (
-
-        <>
-            <Container>
-               
+        <Container lightBackground={lightBackground}>
+               <Wrapper>
+                <Row>
+                    <Column1>
+                        <TextWrapper>
+                            <Title lightText={lightText}>
+                                Title
+                            </Title>
+                        </TextWrapper>
+                    </Column1>
+                </Row>
+               </Wrapper>
         </Container>
-        </>
     )
 }
 

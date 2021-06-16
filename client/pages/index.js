@@ -3,7 +3,8 @@ import { aboutConfig } from "../components/About/AboutConfig";
 import Contact from "../components/Contact/Contact";
 import Landing from "../components/Landing/Landing";
 import LeanrMore from "../components/LearnMore/LearnMore";
-import Skillset from "../components/SkillSet/Skillset";
+import Skillset from "../components/SkillSet/SkillSet";
+import { SkillSetConfig } from "../components/SkillSet/SkillSetConfig";
 
 
 const Index = () => {
@@ -11,7 +12,7 @@ const Index = () => {
         <div>
             <Landing />
             <About {...aboutConfig} />
-
+            <Skillset {...SkillSetConfig}/>
 
         </div>
     )
