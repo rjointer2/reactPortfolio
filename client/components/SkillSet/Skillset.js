@@ -1,25 +1,76 @@
 
-import { Container, Row, Column1, Wrapper } from "../GlobalStyles/Aligment"
-import { TextWrapper, Title } from "../GlobalStyles/Text"
+import { Container, Row, Column1, Wrapper, Column2 } from "../GlobalStyles/Aligment"
+import { Img, ImgWrapper } from "../GlobalStyles/Img"
+import { Heading, Text, TextWrapper, Title } from "../GlobalStyles/Text"
 
 
 
-const Skillset = ({ lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading, text }) => {
+const Skillset = ({ lightText, lightBackground, img1, img2, alt, swapImagePlacement, id, title, heading, text }) => {
    
     return (
-        <Container lightBackground={lightBackground}>
+        <>
+            <Container lightBackground={lightBackground}>
                <Wrapper>
-                <Row>
-                    <Column1>
-                        <TextWrapper>
-                            <Title lightText={lightText}>
-                                Title
-                            </Title>
-                        </TextWrapper>
-                    </Column1>
-                </Row>
+                    <Row swapImagePlacement={swapImagePlacement}>
+                        <Column1>
+                            <TextWrapper>
+                                <Title lightText={lightText}>
+                                    Experience with
+                                </Title>
+                                <Heading lightText={lightText}>
+                                    Server Side Development
+                                </Heading>
+                                <Text>
+                                    {text}
+                                    <br/><br/>
+                                    {text}
+                                    <br/><br/>
+                                    {text}
+                                    <br/><br/>
+                                    {text}
+                                    <br/><br/>
+                                    {text}
+                                </Text>
+                            </TextWrapper>
+                        </Column1>
+                        <Column2>
+                            <ImgWrapper>
+                                <Img src={img1} />
+                            </ImgWrapper>
+                        </Column2>
+                    </Row>
                </Wrapper>
-        </Container>
+            </Container>
+
+            <Container lightBackground={lightBackground}>
+               <Wrapper>
+                    <Row>
+                        <Column1>
+                            <TextWrapper>
+                                <Title lightText={lightText}>
+                                    Experience with
+                                </Title>
+                                <Heading lightText={lightText}>
+                                    Client Side Development
+                                </Heading>
+                                <Text>
+                                    {text}
+                                    <br/><br/>
+                                    {text}
+                                    <br/><br/>
+                                    {text}
+                                </Text>
+                            </TextWrapper>
+                        </Column1>
+                        <Column2>
+                        <ImgWrapper>
+                                <Img src={img2} />
+                            </ImgWrapper>
+                        </Column2>
+                    </Row>
+               </Wrapper>
+            </Container>
+        </>
     )
 }
 
