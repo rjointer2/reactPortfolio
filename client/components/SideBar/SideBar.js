@@ -1,4 +1,5 @@
 
+import Link from 'next/link'
 import React, { useState } from 'react'
 import { SideBarMenu ,SideBarContainer ,CloseMenu, Menu , SideBarBtnWrapper, SideBarLink, SideBarWrapper, SideBarBtnLink } from './SideBarStyles'
 
@@ -15,21 +16,31 @@ const SideBar = ({ isOpen, toggle }) => {
             </Menu>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink href="about">
-                        About 
-                    </SideBarLink>
-                    <SideBarLink href="about" onClick={toggle} >
-                        Skill Set 
-                    </SideBarLink>
-                    <SideBarLink href="about" onClick={toggle} >
-                        Projects 
-                    </SideBarLink>
-                    <SideBarLink href="about" onClick={toggle} >
-                        Inquiry
-                    </SideBarLink>
-                    <SideBarLink href="about" onClick={toggle} >
-                        Learn More 
-                    </SideBarLink>
+                    <Link prefetch href="about">
+                        <SideBarLink href="about">
+                            About
+                        </SideBarLink>
+                    </Link>
+                    <Link prefetch href="skillset">
+                        <SideBarLink href="skillset" onClick={toggle} >
+                                Skill Set 
+                        </SideBarLink>
+                    </Link>
+                    <Link prefetch href="projects">
+                        <SideBarLink href="projects" onClick={toggle} >
+                            Projects 
+                        </SideBarLink>
+                    </Link>
+                   <Link prefetch href ="contact">
+                    <SideBarLink href="inquiry" onClick={toggle} >
+                            Inquiry
+                        </SideBarLink>
+                   </Link>
+                    <Link prefetch href="learnmore">
+                        <SideBarLink href="laernmore" onClick={toggle} >
+                            Learn More 
+                        </SideBarLink>
+                    </Link>
                 </SideBarMenu>
                 <SideBarBtnWrapper>
                     <SideBarBtnLink href="#" onClick={toggle} >

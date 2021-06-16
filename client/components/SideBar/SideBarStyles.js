@@ -29,7 +29,7 @@ export const CloseMenu = styled(FaTimes)`
     color: ${white};
 `;
 
-export const Menu = styled.div` 
+export const Menu = styled.nav` 
     position: absolute;
     top: 1.2rem;
     right: 1.5rem;
@@ -43,7 +43,7 @@ export const SideBarWrapper = styled.div`
     color: ${white};
 `;
 
-export const SideBarLink = styled(Link)`
+export const SideBarLink = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,6 +52,8 @@ export const SideBarLink = styled(Link)`
     list-style: none;
     transition: 0.2s ease-in-out;
     color: ${white};
+    text-decoration: none;
+    padding-top: 30px;
 
     &:hover {
         color: ${secondary};
@@ -70,14 +72,15 @@ export const SideBarBtnLink = styled.div`
     background: ${secondary};
     white-space: nowrap;
     padding: 16px 64px;
-    color: #434344;
+    color: ${white}};
     font-size: 16px;
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-
+    font-size: 1.5rem;
+    
     $:hover {
         transition: all 0.2s ease-in-out;
         background: ${white};
@@ -91,6 +94,7 @@ export const SideBarMenu = styled.ul`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
+    padding: 1rem;
 
 
     @media screen and (max-width: 480px) {
