@@ -43,4 +43,6 @@ export const SubTitle = styled.p`
 `; 
 
 
-
+export const UnderLine = styled.div`
+    border-bottom: 2px solid ${primary}
+`;
