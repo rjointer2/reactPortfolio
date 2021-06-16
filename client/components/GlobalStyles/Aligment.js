@@ -8,8 +8,10 @@ const secondary = "#f0cccc" // biege
 const white = "#fff" // white
 
 export const Container = styled.div`
-    color: ${primary};
-    background: ;
+    background-color: ${({ lightBackground }) => ( lightBackground ? 'white' : primary )};
+    display: flex;
+    justify-content: center;
+
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -17,31 +19,51 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    height: 780px;
-    align-items: center;
-
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-    }
-`;
-
-export const Item = styled.div`
-    margin-bottom: 15px;
-    padding: 0 15px;
-    margin: 1em;
-`;
-
-
-/* display: grid;
+    display: grid;
+    z-index: 1;
     height: 860px;
     width: 100%;
     max-width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 24px;
+    margin-right auto;
+    margin-left auto;
+    padding: 0 20px;
     justify-content: center;
-    grid-template-areas: 
-        col1 col2
-    ; */
+`;
+
+
+export const Row = styled.div`
+    display: grid;
+    grid-auto-columns: minax(auto, 1fr);
+    align-items: center;
+    
+    grid-template-areas: ${({swapImagePlacement}) => swapImagePlacement ? `'col2  col1'` : `'col1  col2'` };
+
+    @media screen and (max-width: 768px) {
+        grid-template-areas: ${({swapImagePlacement}) => swapImagePlacement ? `'col1  col2'` : `'col2  col1'` };
+    }
+`;
+
+// columns div for the postions of the images
+
+export const Column1 = styled.div`
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col1;
+`;
+
+export const Column2 = styled.div`
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col2;
+`;
+
+
+
+
+
+
+export const Item = styled.div`
+    
+`;
+
+

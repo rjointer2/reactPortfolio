@@ -21,6 +21,7 @@ export const LandingContainer = styled.div`
     height: 800px;
     position: relative;
     z-index: 1;
+    transform: translateY(-150px);
 `;
 
 export const LandingBackground = styled.div`
@@ -53,15 +54,54 @@ export const LandingContent = styled.div`
 
 export const LandingH1 = styled.h1`
     color: ${white};
-    font-size: 48px;
+    font-size: 45px;
     text-align: center;
+    height: 55px;
+    overflow: hidden;
 
     @media screen and (max-width: 760px) {
         font-size: 40px;
     }
 
-    @media screen and (max-width: 480px) {
-        font-size: 30px;
+    
+
+`;
+
+export const LandingScroll = styled.div`
+    line-height: 60px;
+
+    &:nth-child(1) {
+        animation: scrolltext 15s infinite;
+    }
+
+    @keyframes scrolltext {
+        0%{
+          margin-top: 0;
+        }
+        12%{
+            margin-top: -60px;
+        }
+        22%{
+            margin-top: -120px;
+        }
+        33%{
+            margin-top: -180px;
+        }
+        50%{
+            margin-top: -240px;
+        }
+        62%{
+            margin-top: -180px;
+        }
+        75%{
+            margin-top: -120px;
+        }
+        83%{
+            margin-top: -60px;
+        }
+        100%{
+            margin-top: 0;
+        }
     }
 
 `;
@@ -83,3 +123,13 @@ export const LandingP = styled.p`
     }
 `;
 
+
+/* 
+
+    smooth={true}
+    duration={500}
+    spy={true}
+    exact="true"
+    offset={-80}
+
+*/

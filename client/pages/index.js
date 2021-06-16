@@ -1,14 +1,19 @@
 import About from "../components/About/About";
+import { aboutConfig } from "../components/About/AboutConfig";
+import Contact from "../components/Contact/Contact";
 import Landing from "../components/Landing/Landing";
+import LeanrMore from "../components/LearnMore/LearnMore";
+import Skillset from "../components/SkillSet/SkillSet";
+import { SkillSetConfig } from "../components/SkillSet/SkillSetConfig";
 
 
 const Index = () => {
     return (
         <div>
             <Landing />
-            <About />
-            <h1>Hello World</h1>
-            <p>Testing...!!</p>
+            <About {...aboutConfig} />
+            <Skillset {...SkillSetConfig}/>
+
         </div>
     )
 }

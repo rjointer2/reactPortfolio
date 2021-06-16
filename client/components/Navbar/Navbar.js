@@ -33,6 +33,19 @@ const Navbar = ({ toggle }) => {
             })
         })
 
+        document.addEventListener('scroll', (e) => {
+            const y = window.scrollY
+            console.log(y)
+
+            if(y >= 800 && y <= 1000) {
+                hoverUnder(archorTags[0])
+            } 
+            if (y >= 1300 && y <= 2000) {
+                hoverUnder(archorTags[1]) 
+            }
+
+        })
+
     }, [])
     
     return (
@@ -61,10 +74,7 @@ const Navbar = ({ toggle }) => {
                         Skill Set 
                     </NavLinks>
                     <NavLinks href="/">
-                        Projects 
-                    </NavLinks>
-                    <NavLinks href="/">
-                         Inquiry
+                        Contact
                     </NavLinks>
                     <NavLinks href="/">
                         Learn More 
