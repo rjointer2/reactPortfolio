@@ -31,10 +31,12 @@ export const ContactCard = styled.div`
 `;
 
 export const ContactSheet = styled.div`
-    height: 400px;
+    height: 420px;
     width: 100%;
     background-color: ${secondary};
     transform: translateX(-10%);
+    display: flex;
+    justify-content: center;
 
     @media screen and (max-width: 400px) {
         display: none;
@@ -44,4 +46,18 @@ export const ContactSheet = styled.div`
 
 export const ContactWrapper = styled.div`
     margin: 30px;
+`;
+
+export const Form = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+`;
+
+export const InputContainer = styled.div`
+
+`;
+
+export const Input = styled.input`
+
 `;
