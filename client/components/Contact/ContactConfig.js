@@ -2,7 +2,7 @@
 export const contactConfig = {
     id: 'contact',
     lightBackground: true,
-    lightText: false,
+    lightText: true,
     swapImagePlacement: false,
     img: require('../../assets/me.png'),
     darkText: false,
