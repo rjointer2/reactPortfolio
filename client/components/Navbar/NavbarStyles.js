@@ -1,6 +1,5 @@
 
 import styled from 'styled-components';
-import Link from 'next/link';
 
 // Palette
 
@@ -89,7 +88,7 @@ export const NavItem = styled.li`
     height: 80px;
 `
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled.a`
     color: ${white};
     display: flex;
     align-items: center;
@@ -113,7 +112,7 @@ export const CreateAccount = styled.nav`
     }
 `   
 
-export const CreateAccountBtn = styled(Link)`
+export const CreateAccountBtn = styled.a`
     border-radius: 50px;
     background: ${secondary};
     white-space:  nowrap;

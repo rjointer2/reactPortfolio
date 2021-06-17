@@ -1,6 +1,6 @@
 
 import React, { useRef } from 'react';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
 import { NavLogo, NavMenu, MobileMenu, Nav, NavContainer, NavLinks, CreateAccount, CreateAccountBtn, HoverArhcor } from './NavbarStyles';
 
@@ -64,21 +64,31 @@ const Navbar = ({ toggle }) => {
                 <NavMenu>
                     {/* here we reference this DOM element so we can use it later */}
                     <HoverArhcor ref={hover}></HoverArhcor>
-                    <NavLinks href="/">
-                        About
-                    </NavLinks>
-                    <NavLinks href="/">
-                        Skill Set 
-                    </NavLinks>
-                    <NavLinks href="/">
-                        Contact
-                    </NavLinks>
-                    <NavLinks href="/">
-                        Learn More 
-                    </NavLinks>
+                    <Link href="#">
+                        <NavLinks>
+                            About
+                        </NavLinks>
+                    </Link>
+                    <Link href="#">
+                        <NavLinks>
+                            Skill Set 
+                        </NavLinks>
+                    </Link>
+                    <Link href="#">
+                        <NavLinks>
+                            Contact
+                        </NavLinks>
+                    </Link>
+                    <Link href="#">
+                        <NavLinks>
+                            Learn More 
+                        </NavLinks>
+                    </Link>
                 </NavMenu>
                 <CreateAccount>
-                    <CreateAccountBtn href="#">Sign Up</CreateAccountBtn>
+                    <Link href="#">
+                        <CreateAccountBtn>Sign Up</CreateAccountBtn>
+                    </Link>
                 </CreateAccount>
             </NavContainer>
         </Nav>
