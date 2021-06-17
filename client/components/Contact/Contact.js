@@ -1,5 +1,5 @@
 
-import { Column1, Column2, ContactCol1, ContactCol2, Container, FlexWrapper, Row, Wrapper } from "../GlobalStyles/Aligment"
+import { Container, Wrapper } from "../GlobalStyles/Aligment"
 import { Heading, SubTitle, Text, TextWrapper, Title } from "../GlobalStyles/Text"
 
 
@@ -10,30 +10,84 @@ const Contact = ({
 
         <Container lightBackground={lightBackground}>
             <Wrapper>
-                <Row>
-                    <FlexWrapper>
-                        <ContactCol1>
-                            <TextWrapper>
-                                <Title lightText={lightText}>
-                                    Contact Form
-                                </Title>
-                                <SubTitle lightText={lightText}>
-                                    Keep up with me on the following below
-                                    or sign up for email notifications and 
-                                    much more!
-                                </SubTitle>
-                                <Text lightText={lightText}>
-                                <i class="fas fa-envelope-square"></i>
-                                <i class="fab fa-twitter-square"></i>
-                                <i class="fas fa-podcast"></i>
-                                </Text>
-                            </TextWrapper>
-                        </ContactCol1>
-                        <ContactCol2>
-                            Test
-                        </ContactCol2>
-                    </FlexWrapper>
-                </Row>
+                <ContactContainer>
+                    <ContactInfo>
+                        <>
+                            <Title>
+                                Contact Info
+                            </Title>
+                            <InfoList>
+                                <InfoItem>
+                                    <Span><Img/></Span>
+                                    <Span>
+                                        Lorem Lopsi
+                                    </Span>
+                                </InfoItem>
+                            </InfoList>
+                            <InfoList>
+                                <InfoItem>
+                                    <Span><Img/></Span>
+                                    <Span>
+                                        Lorem Lopsi
+                                    </Span>
+                                </InfoItem>
+                            </InfoList>
+                            <InfoList>
+                                <InfoItem>
+                                    <Span><Img/></Span>
+                                    <Span>
+                                        Lorem Lopsi
+                                    </Span>
+                                </InfoItem>
+                            </InfoList>
+                            <InfoList>
+                                <ContactForm>
+                                    <Title>
+                                        Send Message
+                                    </Title>
+                                    <FormBox>
+                                        <InputBox>
+                                            <Input />
+                                            <Span>
+                                                First Name
+                                            </Span>
+                                        </InputBox>
+                                        <InputBox>
+                                            <Input />
+                                            <Span>
+                                                Last Name
+                                            </Span>
+                                        </InputBox>
+                                        <InputBox>
+                                            <Input />
+                                            <Span>
+                                                Email Address
+                                            </Span>
+                                        </InputBox>
+                                        <InputBox>
+                                            <Input />
+                                            <Span>
+                                                Mobile Number
+                                            </Span>
+                                        </InputBox>
+                                        <InputBoxWide>
+                                            <TextArea />
+                                            <Span>
+                                                Write Message
+                                            </Span>
+                                        </InputBoxWide>
+                                        <InputBoxWide>
+                                            <Input />
+                                            <BtnWrapper>
+                                                <Button />
+                                            </BtnWrapper>
+                                        </InputBoxWide>
+                                    </FormBox>
+                                </ContactForm>
+                            </InfoList>
+                        </>
+                    </ContactInfo>
+                </ContactContainer>
             </Wrapper>
         </Container>
     )

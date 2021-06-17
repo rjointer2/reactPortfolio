@@ -86,6 +86,13 @@ export const ContactCol2 = styled.div`
     color: blue;
 `;
 
+export const IconWrapper = styled.div`
+
+`;
+
+export const Icon = styled.div`
+    
+`;
 
 
 export const Item = styled.div`
