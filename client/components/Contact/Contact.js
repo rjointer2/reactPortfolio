@@ -6,7 +6,7 @@ import { ContactContainer, ContactCard, ContactSheet, ContactWrapper, Input, Inp
 
 
 const Contact = ({
-    lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading, text
+    lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading, text, reveal
 }) => {
 
     const row = useRef();
@@ -22,13 +22,11 @@ const Contact = ({
 
     const [clicked, setClicked] = useToggle();
 
-    use
-
     return (
 
         <Container lightBackground={lightBackground}>
                 <ContactContainer>
-                    <ContactCard ref={row}>
+                    <ContactCard ref={row} reveal={reveal = clicked ? false : true }>
                         <ContactWrapper>
                             <Title lightText={lightText}>
                                 Contact Info
@@ -56,17 +54,11 @@ const Contact = ({
                             </Icon>
                             <TextWrapper>
                                 <Text lightText={lightText}>
-                                    Feel free to peek and speak! Let's catch up and
-                                    network!
-                                    <br/>
-                                    <button 
-                                        onClick={setClicked}
-                                        
-                                    >
-                                        Hello
-                                    {clicked ? a() : b()}
-                                    </button>
+                                    {text}
                                 </Text>
+                                <button onClick={setClicked}>
+                                    { clicked ? 'Hide Message' : 'Send Message' }
+                                </button>
                             </TextWrapper>
                         </ContactWrapper>
                     </ContactCard>

@@ -24,10 +24,13 @@ export const ContactCard = styled.div`
     width: 200px;
     background-color: ${primary};
     transform: translate(20%, 7%);
+    transition-duration: .8s;
+    transition-timing-function: linear;
     z-index: 1;
 
+
     @media screen and (max-width: 710px) {
-        transform: translate(7%, 110%);
+        transform: ${({ reveal }) => (reveal ? 'translate(7%, 110%)' : 'translate(7%, 7%);')};
     }
     
 `;
