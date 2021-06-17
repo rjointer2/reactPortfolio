@@ -1,5 +1,5 @@
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Column1, Column2, Container, Icon, Row, Wrapper } from "../GlobalStyles/Aligment"
 import { Heading, SubTitle, Text, TextWrapper, Title, UnderLineW } from "../GlobalStyles/Text";
 import { ContactContainer, ContactCard, ContactSheet, ContactWrapper, Input, InputContainer, Form, Textarea } from "./ContactStyle";
@@ -11,26 +11,18 @@ const Contact = ({
 
     const row = useRef();
 
-    const [clicked, setClicked] = useState(false)
+    const useToggle = ( initVal = false ) => {
+        const [ value, setValue ] = useState(initVal);
+        const toggle = useCallback(() => {
+            setValue( val => !val);
+        }, []);
 
-    useEffect(() => {
+        return [value, toggle];
+    }
 
-        const getClass = row.current.getAttribute("class");
-        const className = document.getElementsByClassName(getClass)[0];
+    const [clicked, setClicked] = useToggle();
 
-        className.addEventListener('click', () => {
-
-            clicked ? setClicked(true) : setClicked(false)
-
-           /* clicked ? 
-           
-           if(className.style.transform === "translate(7%, 0%)") {
-            className.style.transform = "translate(7%, 110%)"
-           }
-
-           */
-        })
-    }, [])
+    use
 
     return (
 
@@ -66,6 +58,14 @@ const Contact = ({
                                 <Text lightText={lightText}>
                                     Feel free to peek and speak! Let's catch up and
                                     network!
+                                    <br/>
+                                    <button 
+                                        onClick={setClicked}
+                                        
+                                    >
+                                        Hello
+                                    {clicked ? a() : b()}
+                                    </button>
                                 </Text>
                             </TextWrapper>
                         </ContactWrapper>
