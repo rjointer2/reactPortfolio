@@ -1,15 +1,13 @@
 
 import { Column1, Column2, Container, Icon, Row, Wrapper } from "../GlobalStyles/Aligment"
-import { BtnWrapper } from "../GlobalStyles/Buttons";
-import { Img } from "../GlobalStyles/Img";
 import { Heading, SubTitle, Text, TextWrapper, Title, UnderLineW } from "../GlobalStyles/Text";
 import { ContactContainer, ContactCard, ContactSheet, ContactWrapper, Input, InputContainer, Form } from "./ContactStyle";
-
 
 
 const Contact = ({
     lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading, text
 }) => {
+
     return (
 
         <Container lightBackground={lightBackground}>
@@ -83,7 +81,7 @@ const Contact = ({
                                     </InputContainer>
                                 </Column2>
                            </Row>
-                           {/* Editor Here */}
+
                         </Form>
                     </ContactSheet>
                 </ContactContainer>

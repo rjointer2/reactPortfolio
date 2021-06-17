@@ -14,10 +14,7 @@ const About = ({
     useEffect(() => {
 
         // we want to get the css divs Heading, Title, and Underline, and the Img
-
         const divChildern = divs.current.childNodes
-
-        
     })
 
     return (
