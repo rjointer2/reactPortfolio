@@ -21,23 +21,23 @@ const Contact = ({
                             </Title>
                             <UnderLineW/>
                             <Icon>
-                                <i class="fab fa-twitter"></i>
+                                <i className="fab fa-twitter"></i>
                                 &nbsp;Twitter
                             </Icon>
                             <Icon>
-                                <i class="fab fa-linkedin-in"></i>
+                                <i className="fab fa-linkedin-in"></i>
                                 &nbsp;linkedin
                             </Icon>
                             <Icon>
-                                <i class="fab fa-git"></i>
+                                <i className="fab fa-git"></i>
                                 &nbsp;Github
                             </Icon>
                             <Icon>
-                                <i class="fas fa-podcast"></i>
+                                <i className="fas fa-podcast"></i>
                                 &nbsp;Podcast
                             </Icon>
                             <Icon>
-                                <i class="fas fa-envelope"></i>
+                                <i className="fas fa-envelope"></i>
                                 &nbsp;Email
                             </Icon>
                             <TextWrapper>
