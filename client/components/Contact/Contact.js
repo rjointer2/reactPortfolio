@@ -1,5 +1,5 @@
 
-import { Container, Icon, Row, Wrapper } from "../GlobalStyles/Aligment"
+import { Column1, Column2, Container, Icon, Row, Wrapper } from "../GlobalStyles/Aligment"
 import { BtnWrapper } from "../GlobalStyles/Buttons";
 import { Img } from "../GlobalStyles/Img";
 import { Heading, SubTitle, Text, TextWrapper, Title, UnderLineW } from "../GlobalStyles/Text";
@@ -53,30 +53,37 @@ const Contact = ({
                             <Title>
                                 Leave a Message
                             </Title>
-                            <InputContainer>
-                                <Text>
-                                    First Name
-                                </Text>
-                                <Input />
-                            </InputContainer>
-                            <InputContainer>
-                                <Text>
-                                    Last Name
-                                </Text>
-                                <Input />
-                            </InputContainer>
-                            <InputContainer>
-                                <Text>
-                                    Email Address
-                                </Text>
-                                <Input />
-                            </InputContainer>
-                            <InputContainer>
-                                <Text>
-                                    Subject of Message
-                                </Text>
-                                <Input />
-                            </InputContainer>
+                           <Row>
+                           <Column1>
+                                <InputContainer>
+                                        <Text>
+                                            First Name
+                                        </Text>
+                                        <Input />
+                                    </InputContainer>
+                                    <InputContainer>
+                                        <Text>
+                                            Last Name
+                                        </Text>
+                                        <Input />
+                                    </InputContainer>
+                                </Column1>
+                                <Column2>
+                                    <InputContainer>
+                                        <Text>
+                                            Email Address
+                                        </Text>
+                                        <Input />
+                                    </InputContainer>
+                                    <InputContainer>
+                                        <Text>
+                                            Subject of Message
+                                        </Text>
+                                        <Input />
+                                    </InputContainer>
+                                </Column2>
+                           </Row>
+                           {/* Editor Here */}
                         </Form>
                     </ContactSheet>
                 </ContactContainer>
