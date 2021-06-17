@@ -1,18 +1,42 @@
 
+import { useEffect, useRef, useState } from "react";
 import { Column1, Column2, Container, Icon, Row, Wrapper } from "../GlobalStyles/Aligment"
 import { Heading, SubTitle, Text, TextWrapper, Title, UnderLineW } from "../GlobalStyles/Text";
-import { ContactContainer, ContactCard, ContactSheet, ContactWrapper, Input, InputContainer, Form } from "./ContactStyle";
+import { ContactContainer, ContactCard, ContactSheet, ContactWrapper, Input, InputContainer, Form, Textarea } from "./ContactStyle";
 
 
 const Contact = ({
     lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading, text
 }) => {
 
+    const row = useRef();
+
+    const [clicked, setClicked] = useState(false)
+
+    useEffect(() => {
+
+        const getClass = row.current.getAttribute("class");
+        const className = document.getElementsByClassName(getClass)[0];
+
+        className.addEventListener('click', () => {
+
+            clicked ? setClicked(true) : setClicked(false)
+
+           /* clicked ? 
+           
+           if(className.style.transform === "translate(7%, 0%)") {
+            className.style.transform = "translate(7%, 110%)"
+           }
+
+           */
+        })
+    }, [])
+
     return (
 
         <Container lightBackground={lightBackground}>
                 <ContactContainer>
-                    <ContactCard>
+                    <ContactCard ref={row}>
                         <ContactWrapper>
                             <Title lightText={lightText}>
                                 Contact Info
@@ -81,7 +105,12 @@ const Contact = ({
                                     </InputContainer>
                                 </Column2>
                            </Row>
-
+                            <InputContainer>
+                                <Title>
+                                    Write Here
+                                </Title>
+                                <Textarea />
+                            </InputContainer>
                         </Form>
                     </ContactSheet>
                 </ContactContainer>

@@ -12,8 +12,9 @@ export const ContactContainer = styled.div`
     display: flex;
     width: 100%;
 
-    @media screen and (max-width: 400px) {
-        flex-direction: column;
+    @media screen and (max-width: 710px) {
+        display: grid;
+        justify-content: center;
     }
 
 `;
@@ -25,9 +26,10 @@ export const ContactCard = styled.div`
     transform: translate(20%, 7%);
     z-index: 1;
 
-    @media screen and (max-width: 400px) {
-        transform: translate(30%, 7%);
+    @media screen and (max-width: 710px) {
+        transform: translate(7%, 110%);
     }
+    
 `;
 
 export const ContactSheet = styled.div`
@@ -38,10 +40,9 @@ export const ContactSheet = styled.div`
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width: 400px) {
-        display: none;
+    @media screen and (max-width: 710px) {
+        transform: none;
     }
-
 `;
 
 export const ContactWrapper = styled.div`
@@ -52,12 +53,28 @@ export const Form = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @media screen and (max-width: 710px) {
+        padding: 20px;
+    }
 `;
 
 export const InputContainer = styled.div`
-
 `;
 
 export const Input = styled.input`
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    border-bottom-color: ${primary};
+`;
 
+export const Textarea = styled.textarea`
+    width: 98%;
+    outline: none;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-color: ${primary};
 `;
