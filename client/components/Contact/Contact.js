@@ -1,6 +1,10 @@
 
-import { Container, Wrapper } from "../GlobalStyles/Aligment"
-import { Heading, SubTitle, Text, TextWrapper, Title } from "../GlobalStyles/Text"
+import { Container, Icon, Row, Wrapper } from "../GlobalStyles/Aligment"
+import { BtnWrapper } from "../GlobalStyles/Buttons";
+import { Img } from "../GlobalStyles/Img";
+import { Heading, SubTitle, Text, TextWrapper, Title, UnderLineW } from "../GlobalStyles/Text";
+import { ContactContainer, ContactCard, ContactSheet, ContactWrapper } from "./ContactStyle";
+
 
 
 const Contact = ({
@@ -9,86 +13,46 @@ const Contact = ({
     return (
 
         <Container lightBackground={lightBackground}>
-            <Wrapper>
                 <ContactContainer>
-                    <ContactInfo>
-                        <>
-                            <Title>
+                    <ContactCard>
+                        <ContactWrapper>
+                            <Title lightText={lightText}>
                                 Contact Info
                             </Title>
-                            <InfoList>
-                                <InfoItem>
-                                    <Span><Img/></Span>
-                                    <Span>
-                                        Lorem Lopsi
-                                    </Span>
-                                </InfoItem>
-                            </InfoList>
-                            <InfoList>
-                                <InfoItem>
-                                    <Span><Img/></Span>
-                                    <Span>
-                                        Lorem Lopsi
-                                    </Span>
-                                </InfoItem>
-                            </InfoList>
-                            <InfoList>
-                                <InfoItem>
-                                    <Span><Img/></Span>
-                                    <Span>
-                                        Lorem Lopsi
-                                    </Span>
-                                </InfoItem>
-                            </InfoList>
-                            <InfoList>
-                                <ContactForm>
-                                    <Title>
-                                        Send Message
-                                    </Title>
-                                    <FormBox>
-                                        <InputBox>
-                                            <Input />
-                                            <Span>
-                                                First Name
-                                            </Span>
-                                        </InputBox>
-                                        <InputBox>
-                                            <Input />
-                                            <Span>
-                                                Last Name
-                                            </Span>
-                                        </InputBox>
-                                        <InputBox>
-                                            <Input />
-                                            <Span>
-                                                Email Address
-                                            </Span>
-                                        </InputBox>
-                                        <InputBox>
-                                            <Input />
-                                            <Span>
-                                                Mobile Number
-                                            </Span>
-                                        </InputBox>
-                                        <InputBoxWide>
-                                            <TextArea />
-                                            <Span>
-                                                Write Message
-                                            </Span>
-                                        </InputBoxWide>
-                                        <InputBoxWide>
-                                            <Input />
-                                            <BtnWrapper>
-                                                <Button />
-                                            </BtnWrapper>
-                                        </InputBoxWide>
-                                    </FormBox>
-                                </ContactForm>
-                            </InfoList>
-                        </>
-                    </ContactInfo>
+                            <UnderLineW/>
+                            <Icon>
+                                <i class="fab fa-twitter"></i>
+                                &nbsp;rjointer2
+                            </Icon>
+                            <Icon>
+                                <i class="fab fa-linkedin-in"></i>
+                                &nbsp;Example
+                            </Icon>
+                            <Icon>
+                                <i class="fab fa-git"></i>
+                                &nbsp;Example
+                            </Icon>
+                            <Icon>
+                                <i class="fas fa-podcast"></i>
+                                &nbsp;Example
+                            </Icon>
+                            <Icon>
+                                <i class="fas fa-envelope"></i>
+                                &nbsp;Example
+                            </Icon>
+                            <TextWrapper>
+                                <Text lightText={lightText}>
+                                    Feel free to peek and speak! Let's catch up and
+                                    network!
+                                </Text>
+                            </TextWrapper>
+                            <UnderLineW/>
+                        </ContactWrapper>
+                    </ContactCard>
+                    <ContactSheet>
+
+                    </ContactSheet>
                 </ContactContainer>
-            </Wrapper>
         </Container>
     )
 }

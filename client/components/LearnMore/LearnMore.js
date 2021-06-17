@@ -1,7 +1,7 @@
 
 
 import { Button } from "react-scroll";
-import { Item, Container, Wrapper } from "../GlobalStyles/Aligment"
+import { Container, Wrapper } from "../GlobalStyles/Aligment"
 import { BtnWrapper } from "../GlobalStyles/Buttons"
 import { Img, ImgWrapper } from "../GlobalStyles/Img";
 import { Heading, SubTitle, TextWrapper, Title } from "../GlobalStyles/Text";
