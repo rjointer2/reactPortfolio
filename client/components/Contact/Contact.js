@@ -1,25 +1,14 @@
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import useToggle from '../../hooks/useToggle';
 import { Column1, Column2, Container, Icon, Row, Wrapper } from "../GlobalStyles/Aligment"
-import { FlexImgPosition, Img, ImgWrapper } from "../GlobalStyles/Img";
-import { Heading, SubTitle, Text, TextWrapper, Title, UnderLineW } from "../GlobalStyles/Text";
+import { Img, ImgWrapper } from "../GlobalStyles/Img";
+import { Text, TextWrapper, Title, UnderLineW } from "../GlobalStyles/Text";
 import { ContactContainer, ContactCard, ContactSheet, ContactWrapper, Input, InputContainer, Form, Textarea, ContactBackground } from "./ContactStyle";
 
 
 const Contact = ({
-    lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading, text, reveal
+    lightText, img, alt, id, title, heading, text, reveal
 }) => {
-
-    const row = useRef();
-
-    const useToggle = ( initVal = false ) => {
-        const [ value, setValue ] = useState(initVal);
-        const toggle = useCallback(() => {
-            setValue( val => !val);
-        }, []);
-
-        return [value, toggle];
-    }
 
     const [clicked, setClicked] = useToggle();
 
@@ -27,7 +16,7 @@ const Contact = ({
 
         <ContactBackground>
             <ContactContainer>
-                <ContactCard ref={row} reveal={reveal = clicked ? false : true }>
+                <ContactCard reveal={reveal = clicked ? false : true }>
                     <ContactWrapper>
                         <Title lightText={lightText}>
                             Contact Info

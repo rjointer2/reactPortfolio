@@ -20,10 +20,12 @@ export const ContactContainer = styled.div`
     display: flex;
     width: 100%;
     background: url('../../assets/background-prog.png');
+    padding-left: 5%;
 
     @media screen and (max-width: 710px) {
         display: grid;
         justify-content: center;
+        padding-left: 0;
     }
 
 `;
@@ -40,7 +42,18 @@ export const ContactCard = styled.div`
     @media screen and (max-width: 710px) {
         transform: ${({ reveal }) => (reveal ? 'translate(7%, 110%)' : 'translate(7%, 7%)')};
     }
+
+    @media screen and (max-width: 400px) {
+        transform: ${({ reveal }) => (reveal ? 'translate(50%, 110%)' : 'translate(50%, 7%)')};
+    }
+
+    @media screen and (max-width: 350px) {
+        transform: ${({ reveal }) => (reveal ? 'translate(35%, 110%)' : 'translate(35%, 7%)')};
+    }
     
+    @media screen and (max-width: 280px) {
+        transform: ${({ reveal }) => (reveal ? 'translate(25%, 110%)' : 'translate(25%, 7%)')};
+    }
 `;
 
 export const ContactSheet = styled.div`
@@ -55,6 +68,10 @@ export const ContactSheet = styled.div`
         transform: none;
         filter: ${({reveal}) => ( reveal ? 'blur(1px)' : 'blur(0px)' )};
     }
+
+    @media screen and (max-width: 400px) {
+       height: 500px;
+    }
 `;
 
 export const ContactWrapper = styled.div`
@@ -65,9 +82,14 @@ export const Form = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-left: 10%;
+
+    @media screen and (max-width: 1300px) {
+        margin-left: 20%;
+    }
 
     @media screen and (max-width: 710px) {
-        padding: 20px;
+        margin-left: 10%;
     }
 `;
 
