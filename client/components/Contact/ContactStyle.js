@@ -95,6 +95,7 @@ export const Form = styled.div`
 
 export const InputContainer = styled.div`
     width: 100%;
+    padding-right: 5px;
 `;
 
 export const Input = styled.input`

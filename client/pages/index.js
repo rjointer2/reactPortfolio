@@ -1,12 +1,13 @@
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Landing from "../components/Landing/Landing";
-import LeanrMore from "../components/LearnMore/LearnMore";
+import Projects from "../components/Projects/Projects";
 import Skillset from "../components/SkillSet/SkillSet";
 
 import { SkillSetConfig } from "../components/SkillSet/SkillSetConfig";
 import { contactConfig } from "../components/Contact/ContactConfig";
 import { aboutConfig } from "../components/About/AboutConfig";
+import { projectConfig } from "../components/Projects/projectConfig";
 
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
             <About {...aboutConfig} />
             <Skillset {...SkillSetConfig}/>
             <Contact {...contactConfig} />
+            <Projects {...projectConfig} />
 
         </div>
     )

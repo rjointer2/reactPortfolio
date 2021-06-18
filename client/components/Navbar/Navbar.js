@@ -38,8 +38,8 @@ const Navbar = ({ toggle }) => {
             console.log(y)
 
             if(y >= 800 && y <= 1000) hoverUnder(archorTags[0]) 
-            if (y >= 1300 && y <= 2000) hoverUnder(archorTags[1])
-            if( y >= 3500 && y <= 4000 ) hoverUnder(archorTags[2])
+            if (y >= 1300 && y <= 2800) hoverUnder(archorTags[1])
+            if( y >= 3010 && y <= 4000 ) hoverUnder(archorTags[2])
 
         })
 
