@@ -1,8 +1,6 @@
 
 import styled from 'styled-components';
 
-import { Link as LinkR } from 'react-scroll';
-
 // Palette
 
 const primary = "#d45d83" // light Pink
@@ -90,7 +88,7 @@ export const NavItem = styled.li`
     height: 80px;
 `
 
-export const NavLinks = styled(LinkR)`
+export const NavLinks = styled.a`
     color: ${white};
     display: flex;
     align-items: center;
@@ -114,7 +112,7 @@ export const CreateAccount = styled.nav`
     }
 `   
 
-export const CreateAccountBtn = styled(LinkR)`
+export const CreateAccountBtn = styled.a`
     border-radius: 50px;
     background: ${secondary};
     white-space:  nowrap;

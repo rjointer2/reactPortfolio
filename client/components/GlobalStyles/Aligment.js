@@ -41,29 +41,52 @@ export const Row = styled.div`
     @media screen and (max-width: 768px) {
         grid-template-areas: ${({swapImagePlacement}) => swapImagePlacement ? `'col1  col2'` : `'col2  col1'` };
     }
+
+    @media screen and (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+    }
 `;
 
 // columns div for the postions of the images
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
     grid-area: col1;
 `;
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
     grid-area: col2;
 `;
 
+export const FlexWrapper = styled.div`
+    display: flex;
 
+    @media screen and (max-width: 720px) {
+        flex-direction: column;
+    }
+`;
 
+export const ContactCol1 = styled.div`
+    padding: 10px;
+    background-color: ${primary};
+    height 500px;
+    width: 300px;
+    color: red;
+`;
 
+export const ContactCol2 = styled.div`
+    padding: 10px;
+    background-color: ${primary};
+    height 500px;
+    width: 300px;
+    color: blue;
+`;
 
-
-export const Item = styled.div`
-    
+export const Icon = styled.div`
+    color: ${white};
+    padding-top: 10px;
 `;
 
 

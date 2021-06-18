@@ -21,7 +21,7 @@ const App = ({Component, pageProps}) => {
 
     return (
         <>
-             <Meta />
+            <Meta />
             <Navbar toggle={toggle} />
             <SideBar isOpen={isOpen} toggle={toggle}/>
             <Component {...pageProps}/>

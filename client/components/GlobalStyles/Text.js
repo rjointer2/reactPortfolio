@@ -52,3 +52,9 @@ export const Text = styled.p`
 export const UnderLine = styled.div`
     border-bottom: 2px solid ${primary};
 `;
+
+export const UnderLineW = styled.div`
+    border-bottom: 2px solid ${white};
+    margin-bottom: 20px;
+    margin-top: 20px;
+`;
