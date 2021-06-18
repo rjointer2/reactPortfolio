@@ -12,3 +12,14 @@ export const Img = styled.img`
     padding-right: 0;
 
 `;
+
+export const FlexImgPosition = styled.div`
+    display: flex;
+    margin-top: 100px;
+    transform: translateX(-30px);
+    
+    @media screen and (max-width: 720px) {
+        margin-top: 0px;
+        margin-left: 40px;
+    }
+`;

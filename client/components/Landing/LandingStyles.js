@@ -122,14 +122,3 @@ export const LandingP = styled.p`
         font-size: 18px;
     }
 `;
-
-
-/* 
-
-    smooth={true}
-    duration={500}
-    spy={true}
-    exact="true"
-    offset={-80}
-
-*/

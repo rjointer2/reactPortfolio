@@ -4,7 +4,7 @@ export const contactConfig = {
     lightBackground: true,
     lightText: true,
     swapImagePlacement: false,
-    img: require('../../assets/me.png'),
+    img: require('../../assets/contact.png'),
     darkText: false,
     alt: 'Roody',
     title: `Junior Web Developer`,

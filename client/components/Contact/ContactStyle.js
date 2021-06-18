@@ -2,15 +2,24 @@
 import styled from 'styled-components';
 
 
+import back from '../../assets/background-prog.png'
+
 const primary = "#d45d83" // light Pink
 const secondary = "#f0cccc" // biege
 const white = "#fff" // white
+
+export const ContactBackground = styled.div`
+    background: url(${back});
+    background-size: contain;
+    background-repeat: no-repaeat;
+`;
 
 export const ContactContainer = styled.div`
     margin-top: 200px;
     min-height: 550px;
     display: flex;
     width: 100%;
+    background: url('../../assets/background-prog.png');
 
     @media screen and (max-width: 710px) {
         display: grid;
@@ -24,13 +33,12 @@ export const ContactCard = styled.div`
     width: 200px;
     background-color: ${primary};
     transform: translate(20%, 7%);
-    transition-duration: .8s;
+    transition-duration: .4s;
     transition-timing-function: linear;
     z-index: 1;
 
-
     @media screen and (max-width: 710px) {
-        transform: ${({ reveal }) => (reveal ? 'translate(7%, 110%)' : 'translate(7%, 7%);')};
+        transform: ${({ reveal }) => (reveal ? 'translate(7%, 110%)' : 'translate(7%, 7%)')};
     }
     
 `;
@@ -45,6 +53,7 @@ export const ContactSheet = styled.div`
 
     @media screen and (max-width: 710px) {
         transform: none;
+        filter: ${({reveal}) => ( reveal ? 'blur(1px)' : 'blur(0px)' )};
     }
 `;
 
@@ -63,6 +72,7 @@ export const Form = styled.div`
 `;
 
 export const InputContainer = styled.div`
+    width: 100%;
 `;
 
 export const Input = styled.input`
