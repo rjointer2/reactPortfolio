@@ -1,6 +1,6 @@
 import { Icon, IconWrapper } from "../GlobalStyles/Img";
 import { NavLogo } from "../Navbar/NavbarStyles";
-import { FooterBottomWrapper, FooterContainer, FooterLink, FooterLinkContainer, FooterLinkItem, FooterLinkTitle, FooterLinkWrapper, FooterTextSmall, FooterWrapper } from "./FooterStyle"
+import { FooterBottomWrapper, FooterContainer, FooterLink, FooterLinkContainer, FooterLinkItem, FooterLinkTitle, FooterLinkWrapper, FooterLogo, FooterTextSmall, FooterWrapper } from "./FooterStyle"
 
 const Footer = () => {
     return (
@@ -48,9 +48,9 @@ const Footer = () => {
                     
                 </FooterLinkContainer>
                 <FooterBottomWrapper>
-                    <NavLogo>
+                    <FooterLogo>
                         Logo
-                    </NavLogo>
+                    </FooterLogo>
                     <FooterTextSmall>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     </FooterTextSmall>

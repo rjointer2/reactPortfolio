@@ -31,7 +31,7 @@ export const FlexImgPosition = styled.div`
 export const IconWrapper = styled.div`
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
 `;
 
 export const Icon = styled.div`

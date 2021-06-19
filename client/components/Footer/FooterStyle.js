@@ -81,10 +81,10 @@ export const FooterTextSmall = styled.p`
     color: ${white};
     text-align: center;
     margin-top: 13.5px;
-    padding: 0 100px 0 110px;
+
 
     @media screen and (max-width: 820px) {
-        padding: 0 10px 0 10px;
+        
     }
 
     @media screen and (max-width: 420px) {
@@ -93,13 +93,19 @@ export const FooterTextSmall = styled.p`
     }
 `;
 
+export const FooterLogo = styled.div`
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: ${white};
+    text-align: center;
+`;
+
 export const FooterBottomWrapper = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
 
     @media screen and (max-width: 420px) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        grid-template-columns: 1fr;
     }
 `;

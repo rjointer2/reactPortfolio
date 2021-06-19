@@ -49,7 +49,7 @@ export const LandingContent = styled.div`
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
-    align-items center;
+    align-items: center;
 `;
 
 export const LandingH1 = styled.h1`
@@ -60,11 +60,13 @@ export const LandingH1 = styled.h1`
     overflow: hidden;
 
     @media screen and (max-width: 760px) {
-        font-size: 40px;
+        font-size: 30px;
     }
 
+    @media screen and (max-width: 420px) {
+        font-size: 20px;
+    }
     
-
 `;
 
 export const LandingScroll = styled.div`
