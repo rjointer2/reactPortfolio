@@ -39,7 +39,7 @@ export const SubTitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({darkText}) => ( darkText ? 'white' : 'black' )}
+    color: ${({lightText}) => ( lightText ? white : primary )};
 `; 
 
 export const Text = styled.p`
