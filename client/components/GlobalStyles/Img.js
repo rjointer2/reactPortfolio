@@ -1,9 +1,13 @@
 
 import styled from 'styled-components';
 
+const primary = "#d45d83" // light Pink
+const secondary = "#f0cccc" // biege
+const white = "#fff" // white
+
 export const ImgWrapper = styled.div`
-    max-with: 555px;
-    height: 100%
+    max-width: 555px;
+    height: 100%;
 `;
 
 export const Img = styled.img`
@@ -22,4 +26,15 @@ export const FlexImgPosition = styled.div`
         margin-top: 0px;
         margin-left: 40px;
     }
+`;
+
+export const IconWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+
+`;
+
+export const Icon = styled.div`
+    color: ${white};
+    padding: 5px 10px 5px 0;
 `;
