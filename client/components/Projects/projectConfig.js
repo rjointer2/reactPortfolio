@@ -16,12 +16,6 @@ export const projectConfig = {
     reveal: true,
     projectData: [
         {
-            title: 'Password Generator',
-            summary: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-            img: require('../../assets/passwordGen.png')
-        },
-        {
             title: 'Playful DOM Quiz',
             summary: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
@@ -34,7 +28,7 @@ export const projectConfig = {
             img: require('../../assets/github-mark.png')
         },
         {
-            title: 'Work Day Scheduler',
+            title: 'Work Scheduler',
             summary: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
             img: require('../../assets/scheduler.png')

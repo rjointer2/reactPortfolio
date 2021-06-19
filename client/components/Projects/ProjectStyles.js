@@ -1,6 +1,8 @@
 
 import styled from 'styled-components';
 
+import picture from '../../assets/background-prog.png'
+
 const primary = "#d45d83" // light Pink
 const secondary = "#f0cccc" // biege
 const white = "#fff" // white
@@ -12,7 +14,8 @@ export const ProjectContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: ${primary};
+    background: url(${picture});
+    background-repeat: no-repeat;
 
     @media screen and (max-width: 768px) {
         height: 1100px;
@@ -48,28 +51,38 @@ export const ProjectCard = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 10px;
     max-height: 340px;
     padding: 30px;
     margin: 10px;
     transition: all 0.2s ease=in-out;
+    border: 2px solid ${primary};
 
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease=in-out;
         cursor: pointer;
     }
+
+    @media screen and (max-width: 365px) {
+        padding: 5%;
+        margin: 20px 0 20px 0;
+    }
 `;
 
 export const ProjectImg = styled.img`
     height: 100px;
-    weight: 100px;
     margin-bottom: 10px;
+    
+    @media screen and (max-width: 365px) {
+        padding: 5%;
+        margin: 20px 0 20px 0;
+        width: 100px;
+    }
 `;
 
 export const ProjectTitle = styled.h1`
     font-size: 2.5rem;
-    color: ${white};
+    color: ${primary};
     margin-bottom: 64px;
     display: flex;
     justify-content: center;
