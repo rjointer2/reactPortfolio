@@ -16,19 +16,19 @@ export const projectConfig = {
     reveal: true,
     projectData: [
         {
-            title: 'Password Generator',
-            summary: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-            img: require('../../assets/passwordGen.png')
-        },
-        {
             title: 'Playful DOM Quiz',
             summary: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
             img: require('../../assets/quiz.png')
         },
         {
-            title: 'Work Day Scheduler',
+            title: 'GraphQL API',
+            summary: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+            img: require('../../assets/github-mark.png')
+        },
+        {
+            title: 'Work Scheduler',
             summary: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
             img: require('../../assets/scheduler.png')
@@ -44,12 +44,6 @@ export const projectConfig = {
             summary: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
             img: require('../../assets/github-mark.png')
-        },
-        {
-            title: 'GraphQL API',
-            summary: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-            img: require('../../assets/plantsite.png')
         },
         {
             title: 'Plant Redux Store',

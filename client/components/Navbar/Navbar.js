@@ -9,6 +9,8 @@ import { NavLogo, NavMenu, MobileMenu, Nav, NavContainer, NavLinks, CreateAccoun
 import { FaBars } from 'react-icons/fa'
 import Link from 'next/link';
 
+
+
 // toggle is drilled from the app's Navbar component
 
 const Navbar = ({ toggle }) => {
@@ -40,6 +42,7 @@ const Navbar = ({ toggle }) => {
             if(y >= 800 && y <= 1000) hoverUnder(archorTags[0]) 
             if (y >= 1300 && y <= 2800) hoverUnder(archorTags[1])
             if( y >= 3010 && y <= 4000 ) hoverUnder(archorTags[2])
+            if( y >= 4110 && y <= 5000 ) hoverUnder(archorTags[3])
 
         })
 
@@ -55,11 +58,11 @@ const Navbar = ({ toggle }) => {
                 */}
                 <Link href="#">
                     <NavLogo>
-                        logo
+                    <i class="fas fa-bug"></i>
                     </NavLogo>
                 </Link>
                 <MobileMenu onClick={toggle} >
-                    <FaBars/>
+                    <FaBars style={{transform: 'translateY(-25px)'}}/>
                 </MobileMenu>
                 <NavMenu>
                     {/* here we reference this DOM element so we can use it later */}
@@ -81,7 +84,7 @@ const Navbar = ({ toggle }) => {
                     </Link>
                     <Link href="#">
                         <NavLinks>
-                            Learn More 
+                            Projects
                         </NavLinks>
                     </Link>
                 </NavMenu>

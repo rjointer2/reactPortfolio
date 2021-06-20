@@ -36,9 +36,9 @@ const SideBar = ({ isOpen, toggle }) => {
                             Inquiry
                         </SideBarLink>
                    </Link>
-                    <Link href="learnmore">
-                        <SideBarLink href="laernmore" onClick={toggle} >
-                            Learn More 
+                    <Link href="project">
+                        <SideBarLink href="projects" onClick={toggle} >
+                            Project
                         </SideBarLink>
                     </Link>
                 </SideBarMenu>

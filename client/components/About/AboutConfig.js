@@ -9,13 +9,16 @@ export const aboutConfig = {
     alt: 'Roody',
     title: `Junior Web Developer`,
     heading: `Roosevelt Jointer`,
-    text: `
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-        mollit anim id est laborum.
+    text1:`
+        Thanks for stopping by, you can call me Roody for short! I'm a future graduate from University 
+        of California, Berkeley's Web Development. As a Bay Area Transplant once pursing a Bachelors in Secondary Education,
+        my passion enveloped in LGBT+ Activism and Black Equity. Exposure to Web and Graphic Design lead to
+        a switch in Web and Mobile Development as a career. 
+    `,
+    text2: `
+        My goals as a web developer is to turn client provided design into friendly user interface applications. 
+        Use my web services and skills help Black and POC's businesses transition to a full ecommerce service.
+        Join a team to produce highly scalable web application and software in a aglie and diverse enovironment. 
+        Please feel free to explore or even contact me, I'm more than happy to connect!
     `
 }

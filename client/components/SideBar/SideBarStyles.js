@@ -27,6 +27,16 @@ export const SideBarContainer = styled.aside`
 
 export const CloseMenu = styled(FaTimes)`
     color: ${white};
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        color: ${primary}
+    }
+
+    &.active {
+        transition: all 0.2s ease-in-out;
+        color: ${secondary}
+    }
 `;
 
 export const Menu = styled.nav` 
@@ -56,7 +66,7 @@ export const SideBarLink = styled.a`
     padding-top: 30px;
 
     &:hover {
-        color: ${secondary};
+        color: ${primary};
         transition: 0.2s ease-in-out;
     }
 
@@ -72,19 +82,20 @@ export const SideBarBtnLink = styled.div`
     background: ${secondary};
     white-space: nowrap;
     padding: 16px 64px;
-    color: ${white}};
-    font-size: 16px;
+    color: ${white};
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     font-size: 1.5rem;
+    background: ${primary};
+    margin-bottom: 10px;
     
-    $:hover {
+    &:hover {
         transition: all 0.2s ease-in-out;
-        background: ${white};
-        color: #121211;
+        background-color: ${white};
+        color: ${primary}
     }
 
 `;

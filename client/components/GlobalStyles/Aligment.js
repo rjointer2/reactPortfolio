@@ -24,8 +24,8 @@ export const Wrapper = styled.div`
     height: 860px;
     width: 100%;
     max-width: 1100px;
-    margin-right auto;
-    margin-left auto;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0 20px;
     justify-content: center;
 `;
@@ -71,7 +71,7 @@ export const FlexWrapper = styled.div`
 export const ContactCol1 = styled.div`
     padding: 10px;
     background-color: ${primary};
-    height 500px;
+    height: 500px;
     width: 300px;
     color: red;
 `;
@@ -79,14 +79,10 @@ export const ContactCol1 = styled.div`
 export const ContactCol2 = styled.div`
     padding: 10px;
     background-color: ${primary};
-    height 500px;
+    height: 500px;
     width: 300px;
     color: blue;
 `;
 
-export const Icon = styled.div`
-    color: ${white};
-    padding-top: 10px;
-`;
 
 

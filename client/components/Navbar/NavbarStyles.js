@@ -56,6 +56,18 @@ export const NavLogo = styled.div`
     align-items: 24px;
     font-weight: bold;
     text-decoration: none;
+    animation-name: bug;
+
+    &:hover {
+        animation: bug 1s infinite;
+        transition: all 1s ease-in-out;
+    }
+
+    @keyframes bug {
+            0% {}
+            50% { color: pink}
+            100% {}
+        }
 `;
 
 export const MobileMenu = styled.div`
@@ -65,7 +77,7 @@ export const MobileMenu = styled.div`
         display: block;
         top: 0;
         right: 0;
-        transform: translate(-100%, 60%)
+        transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
         color: ${white};
@@ -95,12 +107,6 @@ export const NavLinks = styled.a`
     text-decoration: none;
     padding: 0 1rem;
     cursor: pointer;
-
-    /* &:hover {
-        height: 80px;
-        border-bottom: 3px solid ${secondary};
-    } */
-   
 `
 
 export const CreateAccount = styled.nav`
@@ -118,7 +124,7 @@ export const CreateAccountBtn = styled.a`
     white-space:  nowrap;
     padding: 10px 22px;
     color: ${white};
-    font-soze: 16px;
+    font-size: 16px;
     outline: none;
     border: none;
     cursor: pointer;

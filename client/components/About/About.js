@@ -6,7 +6,7 @@ import { Heading, Text, TextWrapper, Title, UnderLine } from "../GlobalStyles/Te
 
 
 const About = ({
-    lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading, text
+    lightText, lightBackground, img, alt, swapImagePlacement, id, title, heading, text1, text2
 }) => {
 
     const divs = useRef();
@@ -32,9 +32,7 @@ const About = ({
                             </Title>
                             <UnderLine />
                             <Text lightText={lightText}>
-                                {text}
-                                <br/><br/>
-                                {text}
+                                {text1}<br/><br/>{text2}
                             </Text>
                         </TextWrapper>
                     </Column1>
