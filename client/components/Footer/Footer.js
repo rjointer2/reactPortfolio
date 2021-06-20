@@ -49,7 +49,7 @@ const Footer = () => {
                 </FooterLinkContainer>
                 <FooterBottomWrapper>
                     <FooterLogo>
-                        Logo
+                        <i class="fas fa-bug"></i>
                     </FooterLogo>
                     <FooterTextSmall>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

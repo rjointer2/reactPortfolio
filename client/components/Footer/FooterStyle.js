@@ -98,6 +98,20 @@ export const FooterLogo = styled.div`
     font-weight: 300;
     color: ${white};
     text-align: center;
+    animation-name: bug;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+        animation: bug 1s infinite;
+        transition: all 1s ease-in-out;
+    }
+
+    @keyframes bug {
+            0% {}
+            50% { color: pink}
+            100% {}
+        }
 `;
 
 export const FooterBottomWrapper = styled.div`
