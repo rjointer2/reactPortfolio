@@ -21,6 +21,9 @@ npm i <-- Gets all packages *USE AT ROOT FOLDER*
 cd client
 npm run dev
 
+cd api
+npm start
+
 ## Contribute?
 
 Feel free to add or reference!
