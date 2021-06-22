@@ -21,6 +21,14 @@ const App = ({Component, pageProps}) => {
         setIsOpen(!isOpen)
     }
 
+    const test = async () => {
+        const res = await fetch('http://localhost:3030/something');
+        const data = await res.json();
+        return data
+    }
+
+    //test().then((data) => console.log(data)).catch(err => console.log(err))
+
     return (
         <>
             <Meta />

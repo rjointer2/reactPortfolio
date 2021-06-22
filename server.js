@@ -10,6 +10,14 @@ app.prepare().then(() => {
     server.get('*', (req, res) => {
         return handle(req, res)
     })
+
+    server.use(express.urlencoded({ extended: true }));
+    server.use(express.json());
+
+    server.get('/something', (req, res) => {
+        res.json('hi')
+    })
+
     server.listen(3030, (err) => {
         if(err) throw err
         console.log('server ready');
@@ -17,4 +25,4 @@ app.prepare().then(() => {
 }).catch((ex) => {
     console.error(ex.stack);
     process.exit(1)
-})
+});
