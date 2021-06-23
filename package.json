@@ -1,20 +1,33 @@
 {
-  "name": "portfolio",
+  "name": "client",
   "version": "1.0.0",
-  "description": "<!-- click each bullet to move to the associated section -->\r * [Description](#description)\r * [Install](#install)\r * [Usage](#usage)\r * [Contribute](#contribute)\r * [License](#license)",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rjointer2/reactPortfolio.git"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rjointer2/reactPortfolio/issues"
+  "dependencies": {
+    "next": "^10.2.3",
+    "next-compose-plugins": "^2.2.1",
+    "next-images": "^1.7.0",
+    "next-videos": "^1.4.0",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-glider-carousel": "^0.1.2",
+    "react-icons": "^4.2.0",
+    "react-scroll": "^1.8.2",
+    "styled-components": "^5.3.0",
+    "swiper": "^6.7.0"
   },
-  "homepage": "https://github.com/rjointer2/reactPortfolio#readme"
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.12.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.0"
+  }
 }
